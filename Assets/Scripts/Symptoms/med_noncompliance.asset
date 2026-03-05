@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b37fe9ae850bcb24d8725fd486345822, type: 3}
+  m_Name: med_noncompliance
+  m_EditorClassIdentifier: Assembly-CSharp::SymptomSO
+  id: 66
+  internalName: med_noncompliance
+  symptomType: 3
+  displayName: Medication Non-Compliance
+  priority: 3
+  prefab: {fileID: 0}
+  description: Explains why the flare-up is happening.
+  devNotes: No description provided
