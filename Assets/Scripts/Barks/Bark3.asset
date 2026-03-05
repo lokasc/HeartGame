@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f32ee800ecc343045a73392654bbeac5, type: 3}
   m_Name: Bark3
   m_EditorClassIdentifier: Assembly-CSharp::BarkSO
-  barkText: What's my name agian?
+  barkText: I'm having a hard time breathing...
   questionPrefab: {fileID: 2390812897289697524, guid: b1c09ba008351674293a7276a996126f, type: 3}
-  questionText: Uh oh...
+  questionText: Shortness of breath

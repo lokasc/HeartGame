@@ -31,7 +31,6 @@ public class TextBark : MonoBehaviour
 
     public void ShowQuestion()
     {
-        Debug.Log($"Showing question for bark: {barkSO.barkText}");
         QuestionManager.Instance.ShowQuestion(barkSO);
         Destroy(gameObject);
     }   

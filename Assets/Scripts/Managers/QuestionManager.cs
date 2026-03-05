@@ -7,7 +7,7 @@ public class QuestionManager : MonoBehaviour
 
     [SerializeField] private GameObject questionPanel;
 
-    [SerializeField] private BarkSO testSO;
+    [SerializeField] private DialogueTest dialogueTest;
 
     private void Awake()
     {

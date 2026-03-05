@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BarkSO
   barkText: My back hurts...
   questionPrefab: {fileID: 2390812897289697524, guid: b1c09ba008351674293a7276a996126f, type: 3}
-  questionText: Tell me more about the back pain.
+  questionText: Back pain
