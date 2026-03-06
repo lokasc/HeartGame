@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525620d12d0240579320e28229c3ee50, type: 3}
+  m_Name: herb_recline_q
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
+  id: 18
+  internalName: herb_recline_q
+  origin: 16
+  displayName: Patient's Recline Position
+  dialogueOne: Based on your SOB, it might be better to recline slightly. Would you
+    like me to assist you?
+  dialogueTwo: Oh, yes. That would be great.
+  dialogueThree: '*animation of [reclining patient/bed 30 degrees]*'
+  nextSO: 
+  symptomSO: Assisted patient into a recline position (30 degrees)
+  devNotes: 

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525620d12d0240579320e28229c3ee50, type: 3}
+  m_Name: herb_pain_q
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
+  id: 2
+  internalName: herb_pain_q
+  origin: 3
+  displayName: Any abdominal pain?
+  dialogueOne: Are you feeling any abdominal pain? Or were you feeling any abdominal
+    pain recently?
+  dialogueTwo: None that I noticed.
+  dialogueThree: Alright, I'll note that down.
+  nextSO: 
+  symptomSO: 
+  devNotes: 

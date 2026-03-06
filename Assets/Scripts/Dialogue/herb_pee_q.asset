@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525620d12d0240579320e28229c3ee50, type: 3}
+  m_Name: herb_pee_q
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
+  id: 7
+  internalName: herb_pee_q
+  origin: 1
+  displayName: "Urinary Urgency\u2026"
+  dialogueOne: When you urinate, do you feel like you have to go immediately?
+  dialogueTwo: No. Not really.
+  dialogueThree: "So [no urinary urgency]\u2026that's good."
+  nextSO: 
+  symptomSO: No Urinary Urgency
+  devNotes: 

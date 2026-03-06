@@ -1225,6 +1225,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SymptomsGenerator
   csvName: SymptomSchema.csv
   folderPath: Assets/Scripts/Symptoms
+  dialogueCSVname: herbdialog.csv
+  dialogueFolderPath: Assets/Scripts/Dialogue
 --- !u!4 &1683696435
 Transform:
   m_ObjectHideFlags: 0

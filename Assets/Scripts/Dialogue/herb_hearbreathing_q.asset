@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525620d12d0240579320e28229c3ee50, type: 3}
+  m_Name: herb_hearbreathing_q
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
+  id: 9
+  internalName: herb_hearbreathing_q
+  origin: 5
+  displayName: Observe Patient's Breathing
+  dialogueOne: I noticed on your chart that you've been dealing with [SOB for the
+    past four days]. How has it been affecting your day-to-day?
+  dialogueTwo: It's been *breathe* bad for *breathe* the past 4 days. I can't *breathe*
+    even shower, *breathe*, or go to the kitchen *breathe* to make food.
+  dialogueThree: I'm sorry to hear that. Let me just note that down.
+  nextSO: 
+  symptomSO: Has been dealing with SOB for the past four days.
+  devNotes: 

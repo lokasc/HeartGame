@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525620d12d0240579320e28229c3ee50, type: 3}
+  m_Name: herb_history_q
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSO
+  id: 5
+  internalName: herb_history_q
+  origin: 1
+  displayName: Any relevant history?
+  dialogueOne: Have you ever had any tests or checks done on your heart?
+  dialogueTwo: I did. They said my heart isn't pumping enough blood effectively.
+  dialogueThree: "I see\u2026so a [history of heart-failure induced injection fraction],
+    to be specific."
+  nextSO: 
+  symptomSO: Has a history of heart-failure induced injection fraction
+  devNotes: 
