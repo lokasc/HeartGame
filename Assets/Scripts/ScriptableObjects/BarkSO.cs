@@ -1,11 +1,10 @@
 using UnityEngine;
 // Use the CreateAssetMenu attribute to allow creating instances of this ScriptableObject from the Unity Editor.
-[CreateAssetMenu(fileName = "Custom", menuName = "Custom/BarkSO", order = 1)]
+[CreateAssetMenu(fileName = "Custom", menuName = "Custom/BarkSO")]
 public class BarkSO : ScriptableObject
 {
+    public string patientName;
+    public string barkName;
     public string barkText;
-
-    public GameObject questionPrefab;
-    public string questionText;
-
+    public string triggersDialogue;
 }

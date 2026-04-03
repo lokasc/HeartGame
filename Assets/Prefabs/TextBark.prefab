@@ -187,7 +187,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f2d92fde2988704ea83983932befe62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TextBark
-  barkSO: {fileID: 11400000, guid: 034e7ef011dd4b94aba157bd297b75b5, type: 2}
 --- !u!225 &8182835014114772083
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -323,7 +322,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4620885574247084226}
         m_TargetAssemblyTypeName: TextBark, Assembly-CSharp
-        m_MethodName: ShowQuestion
+        m_MethodName: ShowDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

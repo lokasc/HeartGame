@@ -29,14 +29,14 @@ public class TextBark : MonoBehaviour
         sequence.OnComplete(() => Destroy(gameObject));
     }
 
-    public void ShowQuestion()
-    {
-        QuestionManager.Instance.ShowQuestion(barkSO);
-        Destroy(gameObject);
-    }   
-
     public void SetBarkSO(BarkSO newBarkSO)
     {
         barkSO = newBarkSO;
+    }
+
+    public void ShowDialogue()
+    {
+        ChoiceManager.Instance.ShowChoice(barkSO.triggersDialogue);
+        Destroy(gameObject);
     }
 }
