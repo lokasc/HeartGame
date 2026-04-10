@@ -6299,6 +6299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BarkManager
   barkList: []
   allBarks:
+  - {fileID: 11400000, guid: 13b1009ad80b7634ab480e3b26f7ba91, type: 2}
   - {fileID: 11400000, guid: f26984172dea9a84e933737fa543550c, type: 2}
   spawnInterval: 5
   barkPrefab: {fileID: 3392772143260653499, guid: 79213866cb8f4ad499e59db43d0f693e, type: 3}
@@ -6333,7 +6334,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8fe65efea98c1140a35c2ddfc91c624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NotesManager
-  allNotes: []
+  allNotes:
+  - {fileID: 11400000, guid: 85394343b5bc784488b777d796de6a56, type: 2}
+  - {fileID: 11400000, guid: da992d1f1c76f79459dc1b71887f592c, type: 2}
+  - {fileID: 11400000, guid: acd17e1e30151284f979ef37a79216f7, type: 2}
+  - {fileID: 11400000, guid: 4bb40083a336d7541924c79381bdc61e, type: 2}
+  - {fileID: 11400000, guid: 0a59eba2837b8a3449af8e4c950a9746, type: 2}
+  - {fileID: 11400000, guid: 48d09e3b2a5e58149bfa0408b1e3b5a0, type: 2}
   noteList: []
   notesPanel: {fileID: 1760539355}
   notePrefab: {fileID: 4785787838648638049, guid: f649815e37ecb0d47b3a097dbe1b1c78, type: 3}
@@ -6350,7 +6357,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TraitManager
   currentPatientName: 
-  allTraits: []
+  allTraits:
+  - {fileID: 11400000, guid: 842f3a94a41f1da46afe69a5f264a369, type: 2}
+  - {fileID: 11400000, guid: d199a122927ddd94bb5e614f34df9cde, type: 2}
+  - {fileID: 11400000, guid: 8c321a858cc5db2428747b53df403e31, type: 2}
+  - {fileID: 11400000, guid: 0750eafe27e75c64bb308170ef58a319, type: 2}
+  - {fileID: 11400000, guid: f8b3e5d6a0e34344bb63deedf7e6f0ca, type: 2}
+  - {fileID: 11400000, guid: 4d429961585c856428e58eb76583dab1, type: 2}
+  - {fileID: 11400000, guid: 19e5f9af2f8799f4f9dc19d3efb10ef8, type: 2}
+  - {fileID: 11400000, guid: 6b6f965762432b043b16bbdc2143da6f, type: 2}
+  - {fileID: 11400000, guid: f345df32ecd3f7c44a6912168679e826, type: 2}
+  - {fileID: 11400000, guid: 79031f71bf609054d97de604cbdf8a92, type: 2}
+  - {fileID: 11400000, guid: f8fe5a065fadb4448837480e3084fed6, type: 2}
+  - {fileID: 11400000, guid: d6f97e7a8c317f148b5e773372b96907, type: 2}
+  - {fileID: 11400000, guid: c15be420bb5980b4692bd8e1f17e227a, type: 2}
+  - {fileID: 11400000, guid: a5ba5dced88aeac4d8a2cb650cd9b1ff, type: 2}
+  - {fileID: 11400000, guid: 1bd2e7d8d972e6e49becdb1341ad5ce4, type: 2}
+  - {fileID: 11400000, guid: 823fb7a68202d264ab1af31306ab5b66, type: 2}
+  - {fileID: 11400000, guid: 47b514e1f094878448bac8d33fbbaef5, type: 2}
+  - {fileID: 11400000, guid: a3d986637ea2b284b9d3d09f46839f7c, type: 2}
+  - {fileID: 11400000, guid: 9601942b7649f1549b3de294663582fe, type: 2}
+  - {fileID: 11400000, guid: e6b930fc970069247801782a5cc97e5d, type: 2}
+  - {fileID: 11400000, guid: 625be55bd9ac59a40afd71886c1650f1, type: 2}
+  - {fileID: 11400000, guid: 7866d035859893c41a10abb81cb10088, type: 2}
+  - {fileID: 11400000, guid: a4d8646bcddbb31468adb718da7194de, type: 2}
+  - {fileID: 11400000, guid: 2da688da82fb6dc41bba6663aadcff13, type: 2}
+  - {fileID: 11400000, guid: e0ae382bf581a8f49ba92fac08f66de6, type: 2}
+  - {fileID: 11400000, guid: 7ba588e5ea425a74cbaf00716350756d, type: 2}
+  - {fileID: 11400000, guid: 086ce435a1063b44c82de6758180970c, type: 2}
+  - {fileID: 11400000, guid: f59b4ad1b4a6ac544a0f7ac7f42cab5c, type: 2}
+  - {fileID: 11400000, guid: b449f528cd0bdc948972f1b1bbbc8274, type: 2}
+  - {fileID: 11400000, guid: b902ab3792c7b1a4ab1edd7a73816679, type: 2}
+  - {fileID: 11400000, guid: 4bae8fec15d785b4a9507f356f57ef16, type: 2}
+  - {fileID: 11400000, guid: 79e767cd993a66149909c14b6ed583f9, type: 2}
+  - {fileID: 11400000, guid: 8a88a48adbe126f42aae6a6d59f31122, type: 2}
   patientTraits: []
 --- !u!114 &1809544741
 MonoBehaviour:
@@ -6365,7 +6405,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceManager
   choiceList: []
-  allChoices: []
+  allChoices:
+  - {fileID: 11400000, guid: 5619fa6c6eda7a840a5d7cc72295cecf, type: 2}
+  - {fileID: 11400000, guid: 2e382de8bf9edc2428ea04fe24440396, type: 2}
+  - {fileID: 11400000, guid: 8613738341a5c0d4888dc89d1e8fbc37, type: 2}
+  - {fileID: 11400000, guid: 7bf9a7af7bb5a5647bb9f944322d935c, type: 2}
+  - {fileID: 11400000, guid: 098ae2db684d997468fffa9fcfae675a, type: 2}
+  - {fileID: 11400000, guid: 4c7b3e4514ed01d47bb42c9c41e46f70, type: 2}
   choicePanel: {fileID: 971752179}
   patientText: {fileID: 144546853}
   optionAPanel: {fileID: 1101690887}
