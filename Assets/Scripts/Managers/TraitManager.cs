@@ -11,7 +11,8 @@ public class TraitManager : MonoBehaviour
 {    
     public static TraitManager Instance { get; private set; }
 
-    public string currentPatientName;
+    public string CurrentPatientName;
+    public string CurrentPatientFullName;
 
     [SerializeField] private TraitSO[] allTraits; // Auto-populated by weird editor script magic
 
@@ -64,4 +65,10 @@ public class TraitManager : MonoBehaviour
         if (patientTraits == null) return new List<TraitSO>();
         return patientTraits.Where(trait => trait.representedOn == representedOnValue).ToList();
     }
+
+    public void SetPatientFullName(string fullName)
+    {
+        CurrentPatientFullName = fullName;
+    }
+
 }

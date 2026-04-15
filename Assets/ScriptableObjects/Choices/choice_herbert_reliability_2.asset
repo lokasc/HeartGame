@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2783a16621e4d4bb4f8c10fcb6c58f, type: 3}
+  m_Name: choice_herbert_reliability_2
+  m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
+  patientName: herbert
+  choiceName: choice_herbert_reliability_2
+  patientDialogue: To be honest with you, I [skip the water pill] sometimes cause
+    it makes me pee too much...
+  optionAText: Then go to the bathroom already!
+  optionANext: 
+  optionBText: Why so, if you don't mind me asking?
+  optionBNext: choice_herbert_reliability_3
+  notesText: Maybe set a reminder to take your meds.
+  notesButtonText: 
+  notesName: note_herbert_reliability_2

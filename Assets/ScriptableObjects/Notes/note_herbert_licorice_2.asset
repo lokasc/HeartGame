@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NoteSO
   patientName: herbert
   noteName: note_herbert_licorice_2
-  noteText: Patient alludes to eating licorice.
+  noteText: DUDE YOU gotta stop eating licorice.
   symptomsCaught: 0
