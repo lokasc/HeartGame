@@ -17,9 +17,13 @@ MonoBehaviour:
   patientDialogue: Just my two sons, but they moved to the west coast a few years
     ago.
   optionAText: So there's no one local who can assist you day-to-day?
-  optionANext: choice_herbert_family_end_A
+  optionANext: 
+  optionAEmpathyDescription: Event Ignored
+  optionAEmpthayPoint: -1
   optionBText: Do you two stay in touch? Do you have much support around here?
   optionBNext: choice_herbert_family_2
+  optionBEmpathyDescription: Greeting
+  optionBEmpthayPoint: 1
   notesText: Good to know, thank you.
   notesButtonText: 
   notesName: note_herbert_family_brief

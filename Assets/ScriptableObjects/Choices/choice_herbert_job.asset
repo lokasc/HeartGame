@@ -16,10 +16,14 @@ MonoBehaviour:
   choiceName: choice_herbert_job
   patientDialogue: Stayed with those boys through some more difficult years...
   optionAText: Oh, so you're retired. Got it.
-  optionANext: choice_herbert_job_end_A
+  optionANext: 
+  optionAEmpathyDescription: Event Ignored
+  optionAEmpthayPoint: -1
   optionBText: "Engine 205, Ladder 118 \u2014 Brooklyn, right? Thank you for your
     service."
   optionBNext: choice_herbert_job_2
+  optionBEmpathyDescription: Greeting
+  optionBEmpthayPoint: 1
   notesText: I'll make note of that, thank you.
   notesButtonText: 
   notesName: note_herbert_job_brief

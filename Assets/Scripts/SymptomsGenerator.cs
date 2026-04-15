@@ -185,10 +185,104 @@ public class SymptomsGenerator : MonoBehaviour
             newSO.patientDialogue = values[2];
             newSO.optionAText = values[3];
             newSO.optionANext = values[4];
+            newSO.optionAEmpathyDescription = values[5]; // Empty Values just show up as ""
             newSO.optionBText = values[6];
             newSO.optionBNext = values[7];
+            newSO.optionBEmpathyDescription = values[8];
             newSO.notesText = values[9];
             newSO.notesName = values[10];
+            
+            // Assign Points based on the EmpathyDescription (Its a tag).
+            switch (newSO.optionAEmpathyDescription)
+            {
+                case "Interruption":
+                    newSO.optionAEmpthayPoint = -2; 
+                    break;
+
+                case "Event Ignored":
+                    // Handle Event Ignored
+                    newSO.optionAEmpthayPoint = -1;
+                    break;
+
+                case "Event Addressed":
+                    // Handle Event Addressed
+                    newSO.optionAEmpthayPoint = 1;
+                    break;
+
+                case "Cold Pivot":
+                    // Handle Cold Pivot Greeting
+                    newSO.optionAEmpthayPoint = -1;
+                    break;
+
+                case "Validation":
+                    // Handle Validation
+                    newSO.optionAEmpthayPoint = 2;
+                    break;
+
+                case "Redundant":
+                    newSO.optionAEmpthayPoint = -1;
+                    break;
+                
+                case "Greeting":
+                    newSO.optionAEmpthayPoint = 1;
+                    break;
+                
+                case "No Effect":
+                    newSO.optionAEmpthayPoint = 0;
+                    break;
+
+                default:
+                    // Handle unknown case
+                    newSO.optionAEmpthayPoint = 0;
+                    break;
+            }
+            
+            // Assign Points based on the EmpathyDescription (Its a tag).
+            switch (newSO.optionBEmpathyDescription)
+            {
+                case "Interruption":
+                    newSO.optionBEmpthayPoint = -2; 
+                    break;
+
+                case "Event Ignored":
+                    // Handle Event Ignored
+                    newSO.optionBEmpthayPoint = -1;
+                    break;
+
+                case "Event Addressed":
+                    // Handle Event Addressed
+                    newSO.optionBEmpthayPoint = 1;
+                    break;
+
+                case "Cold Pivot":
+                    // Handle Cold Pivot Greeting
+                    newSO.optionBEmpthayPoint = -1;
+                    break;
+
+                case "Validation":
+                    // Handle Validation
+                    newSO.optionBEmpthayPoint = 2;
+                    break;
+
+                case "Redundant":
+                    newSO.optionBEmpthayPoint = -1;
+                    break;
+                
+                case "Greeting":
+                    newSO.optionBEmpthayPoint = 1;
+                    break;
+                
+                case "No Effect":
+                    newSO.optionBEmpthayPoint = 0;
+                    break;
+
+                default:
+                    // Handle unknown case
+                    newSO.optionBEmpthayPoint = 0;
+                    break;
+            }
+            
+            
             
             //newSO.devNotes = string.IsNullOrEmpty(values[6]) ? "No description provided" : values[6];
 

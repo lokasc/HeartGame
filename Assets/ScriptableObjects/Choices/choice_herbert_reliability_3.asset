@@ -17,8 +17,12 @@ MonoBehaviour:
   patientDialogue: 'Usually I''m [too tired to get up.]'
   optionAText: 
   optionANext: 
+  optionAEmpathyDescription: No effect
+  optionAEmpthayPoint: 0
   optionBText: 
   optionBNext: 
+  optionBEmpathyDescription: No effect
+  optionBEmpthayPoint: 0
   notesText: Thank you for being honest with me.
   notesButtonText: 
   notesName: note_herbert_reliability_2

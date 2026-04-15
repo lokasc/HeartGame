@@ -17,8 +17,12 @@ MonoBehaviour:
   patientDialogue: We call when we can. It's fine. I manage.
   optionAText: 
   optionANext: 
+  optionAEmpathyDescription: No effect
+  optionAEmpthayPoint: 0
   optionBText: 
   optionBNext: 
+  optionBEmpathyDescription: No effect
+  optionBEmpthayPoint: 0
   notesText: Good to know, thank you.
   notesButtonText: 
   notesName: note_herbert_family_full

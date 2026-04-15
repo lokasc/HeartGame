@@ -18,8 +18,12 @@ MonoBehaviour:
     me pee all night, and now I'm wondering if that's... connected.
   optionAText: 
   optionANext: 
+  optionAEmpathyDescription: No effect
+  optionAEmpthayPoint: 0
   optionBText: 
   optionBNext: 
+  optionBEmpathyDescription: No effect
+  optionBEmpthayPoint: 0
   notesText: I'll make note of that and we'll take a look.
   notesButtonText: 
   notesName: note_herbert_PC_full

@@ -18,8 +18,12 @@ MonoBehaviour:
     to handle all that.
   optionAText: 
   optionANext: 
+  optionAEmpathyDescription: No effect
+  optionAEmpthayPoint: 0
   optionBText: 
   optionBNext: 
+  optionBEmpathyDescription: No effect
+  optionBEmpthayPoint: 0
   notesText: Okay, noted.
   notesButtonText: 
   notesName: note_herbert_diet_full

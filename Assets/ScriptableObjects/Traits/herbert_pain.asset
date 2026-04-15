@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   patientName: herbert
   traitName: herbert_pain
-  traitData: No Pain Reported
+  traitData: No pain reported
   representedOn: chart
   socketGO: 
   triggersDialogue: choice_herbert_pain

@@ -10,15 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae2783a16621e4d4bb4f8c10fcb6c58f, type: 3}
-  m_Name: chocie_herbert_licorice_2
+  m_Name: choice_herbert_weight
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
-  choiceName: chocie_herbert_licorice_2
-  patientDialogue: No, I hate pancakes...
-  optionAText: How much would you say you eat a day?
-  optionANext: herbert_licorice_3
+  choiceName: choice_herbert_weight
+  patientDialogue: I've been gaining weight, but I don't eat more than I usuallly
+    do.
+  optionAText: It says here you're 208 pounds.
+  optionANext: choice_herbert_weight_2
+  optionAEmpathyDescription: Redundant
+  optionAEmpthayPoint: -1
   optionBText: 
   optionBNext: 
-  notesText: Cool. Moving on...
+  optionBEmpathyDescription: 
+  optionBEmpthayPoint: 0
+  notesText: 
   notesButtonText: 
-  notesName: herbert_licorice
+  notesName: 

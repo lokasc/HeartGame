@@ -17,8 +17,12 @@ MonoBehaviour:
   patientDialogue: I was a firefighter, actually!
   optionAText: 
   optionANext: 
+  optionAEmpathyDescription: Greeting
+  optionAEmpthayPoint: 1
   optionBText: 
   optionBNext: 
+  optionBEmpathyDescription: No effect
+  optionBEmpthayPoint: 0
   notesText: A firefighter!
   notesButtonText: 
   notesName: note_herbert_myjob_2

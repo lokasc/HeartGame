@@ -144,10 +144,14 @@ public class ChoiceManager : MonoBehaviour
     }
 
     public void SelectOptionA(){
+        GameManager.instance.empathyPoints += currentChoice.optionAEmpthayPoint;
+        Debug.Log("Empathy Points Gained: " + currentChoice.optionAEmpthayPoint.ToString());
         ShowNextChoice(optionANextChoice);
     }
 
     public void SelectOptionB(){
+        GameManager.instance.empathyPoints += currentChoice.optionBEmpthayPoint;
+        Debug.Log("Empathy Points Gained: " + currentChoice.optionBEmpthayPoint.ToString());
         ShowNextChoice(optionBNextChoice);
     }
 

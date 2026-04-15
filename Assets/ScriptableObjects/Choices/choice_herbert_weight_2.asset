@@ -10,15 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae2783a16621e4d4bb4f8c10fcb6c58f, type: 3}
-  m_Name: choice_herbert_licorice
+  m_Name: choice_herbert_weight_2
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
-  choiceName: choice_herbert_licorice
-  patientDialogue: Boy, I love licorice. I could use some right now.
-  optionAText: Looks like you love pancakes, too.
-  optionANext: herbert_licorice_2
-  optionBText: About how much would you say you eat a day?
-  optionBNext: herbert_licorice_3
-  notesText: No eating in the exam room.
+  choiceName: choice_herbert_weight_2
+  patientDialogue: 
+  optionAText: 
+  optionANext: 
+  optionAEmpathyDescription: 
+  optionAEmpthayPoint: 0
+  optionBText: 
+  optionBNext: 
+  optionBEmpathyDescription: 
+  optionBEmpthayPoint: 0
+  notesText: 
   notesButtonText: 
-  notesName: herbert_licorice
+  notesName: 

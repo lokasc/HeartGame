@@ -18,9 +18,13 @@ MonoBehaviour:
     up with my medications...
   optionAText: We'll figure out the breathing. Let's not jump to conclusions about
     the medications.
-  optionANext: choice_herbert_PC_end_A
+  optionANext: 
+  optionAEmpathyDescription: Event Ignored
+  optionAEmpthayPoint: -1
   optionBText: We'll look into both. Which medications are you most concerned about?
   optionBNext: choice_herbert_PC_2
+  optionBEmpathyDescription: Greeting
+  optionBEmpthayPoint: 1
   notesText: I'll make note of that and we'll take a look.
   notesButtonText: 
   notesName: note_herbert_PC_brief

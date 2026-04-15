@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   patientName: herbert
   traitName: herbert_urinaryurgency
-  traitData: Urinary Urgency
+  traitData: Urinary urgency
   representedOn: chart
   socketGO: 
   triggersDialogue: choice_herbert_urinaryurgency

@@ -15,10 +15,14 @@ MonoBehaviour:
   patientName: herbert
   choiceName: choice_herbert_myjob
   patientDialogue: Sorry. Old habit from my job--
-  optionAText: You have a job? But you're so old!
+  optionAText: Sorry, what were you saying?
   optionANext: choice_herbert_myjob_2
+  optionAEmpathyDescription: Event Ignored
+  optionAEmpthayPoint: -1
   optionBText: Oh! Where did you work before?
   optionBNext: choice_herbert_myjob_3
+  optionBEmpathyDescription: 
+  optionBEmpthayPoint: 0
   notesText: Not interested.
   notesButtonText: 
   notesName: note_herbert_myjob

@@ -14,11 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_myjob_2
-  patientDialogue: I'm retired...
+  patientDialogue: Nothing. I'm retired...
   optionAText: Right. Moving on!
   optionANext: 
+  optionAEmpathyDescription: No effect
+  optionAEmpthayPoint: 0
   optionBText: 
   optionBNext: 
-  notesText: Works somewhere...
+  optionBEmpathyDescription: 
+  optionBEmpthayPoint: 0
+  notesText: Used to work somewhere.
   notesButtonText: 
   notesName: note_herbert_myjob

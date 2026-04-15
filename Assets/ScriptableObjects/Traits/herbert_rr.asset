@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   patientName: herbert
   traitName: herbert_rr
-  traitData: RR 24 (Tachypnea)
+  traitData: 24
   representedOn: chart
   socketGO: 
   triggersDialogue: 
