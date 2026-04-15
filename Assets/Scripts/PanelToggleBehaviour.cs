@@ -4,6 +4,8 @@ using UnityEngine.UI;
 public class PanelToggleBehaviour : MonoBehaviour
 {
     public float lerpTime = 3f;
+
+    public GameObject rootObject;
     
     public Toggle toggleComponent;
     public Transform startPosition;
@@ -27,7 +29,11 @@ public class PanelToggleBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        parentTransform.position = Vector3.Lerp(parentTransform.position, targetTransform.position, Time.deltaTime * lerpTime);
+        if(rootObject != null)
+        {
+            rootObject.transform.position = Vector3.Lerp(rootObject.transform.position, targetTransform.position, Time.deltaTime * lerpTime);
+        }
+
     }
 
     void OnValueChanged(bool isOn)

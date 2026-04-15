@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee7f539b15b91994e8d45cc9ea1703ac, type: 3}
   m_Name: herbert_unclothed_chest
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
-  patientName: 
+  patientName: herbert
   traitName: herbert_unclothed_chest
   traitData: 
-  representedOn: 
+  representedOn: body
   socketGO: 
   triggersDialogue: 

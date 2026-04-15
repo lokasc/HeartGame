@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2783a16621e4d4bb4f8c10fcb6c58f, type: 3}
+  m_Name: choice_herbert_myjob
+  m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
+  patientName: herbert
+  choiceName: choice_herbert_myjob
+  patientDialogue: Sorry. Old habit from my job--
+  optionAText: You have a job? But you're so old!
+  optionANext: choice_herbert_myjob_2
+  optionBText: Oh! Where did you work before?
+  optionBNext: choice_herbert_myjob_3
+  notesText: Not interested.
+  notesButtonText: 
+  notesName: note_herbert_myjob
