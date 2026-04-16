@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NoteSO
   patientName: herbert
   noteName: note_herbert_weight_2
-  noteText: 
-  symptomsCaught: 0
+  noteText: Patient keeps talking about weight gain despite not eating much.
+  symptomsCaught: 1

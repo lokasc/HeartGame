@@ -17,8 +17,8 @@ MonoBehaviour:
   patientDialogue: I even forgot to take my medications last night, too.
   optionAText: You should be more disciplined.
   optionANext: 
-  optionAEmpathyDescription: No effect
-  optionAEmpthayPoint: 0
+  optionAEmpathyDescription: Event Ignored
+  optionAEmpthayPoint: -1
   optionBText: I see...Have you not been taking your medications regularly?
   optionBNext: choice_herbert_reliability_2
   optionBEmpathyDescription: No effect

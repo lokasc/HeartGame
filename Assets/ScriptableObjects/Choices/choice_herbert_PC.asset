@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_PC
-  patientDialogue: I've had some trouble breathing, I'm worried something might be
-    up with my medications...
+  patientDialogue: I've had recent trouble breathing and now I'm worried something
+    might be up with my medications...
   optionAText: We'll figure out the breathing. Let's not jump to conclusions about
     the medications.
   optionANext: 
-  optionAEmpathyDescription: Event Ignored
+  optionAEmpathyDescription: Cold Pivot
   optionAEmpthayPoint: -1
-  optionBText: We'll look into both. Which medications are you most concerned about?
+  optionBText: Let's look into both. Which medications are you most concerned about?
   optionBNext: choice_herbert_PC_2
   optionBEmpathyDescription: Greeting
   optionBEmpthayPoint: 1

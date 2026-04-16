@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BarkSO
   patientName: herbert
   barkName: herbert_family_bark
-  barkText: Just my two sons, but they moved to the west coast a few years ago.
+  barkText: I miss my sons sometimes...
   triggersDialogue: choice_herbert_family

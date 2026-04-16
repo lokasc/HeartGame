@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   patientName: herbert
   traitName: herbert_temperature
-  traitData: 96.4 F
+  traitData: 98.6 F
   representedOn: chart
   socketGO: 
   triggersDialogue: choice_herbert_temperature

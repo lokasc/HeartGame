@@ -20,10 +20,10 @@ MonoBehaviour:
   optionANext: choice_herbert_weight_2
   optionAEmpathyDescription: Redundant
   optionAEmpthayPoint: -1
-  optionBText: 
+  optionBText: That sounds important. Thank you for telling me.
   optionBNext: 
-  optionBEmpathyDescription: 
-  optionBEmpthayPoint: 0
-  notesText: 
+  optionBEmpathyDescription: Validation
+  optionBEmpthayPoint: 2
+  notesText: I'll write that down now.
   notesButtonText: 
-  notesName: 
+  notesName: note_herbert_weight

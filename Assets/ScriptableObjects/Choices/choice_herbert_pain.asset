@@ -14,15 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_pain
-  patientDialogue: 
-  optionAText: 
-  optionANext: 
-  optionAEmpathyDescription: 
-  optionAEmpthayPoint: 0
-  optionBText: 
+  patientDialogue: Oh, I already told the front desk I'm not feeling any pain.
+  optionAText: Just making sure there's no discrepancies there.
+  optionANext: choice_herbert_pain_2
+  optionAEmpathyDescription: Redundant
+  optionAEmpthayPoint: -1
+  optionBText: Just double checking. If there are any sudden changes, please let
+    me know.
   optionBNext: 
-  optionBEmpathyDescription: 
-  optionBEmpthayPoint: 0
+  optionBEmpathyDescription: Event Addressed
+  optionBEmpthayPoint: 1
   notesText: 
   notesButtonText: 
-  notesName: 
+  notesName: note_herbert_pain

@@ -18,8 +18,8 @@ MonoBehaviour:
     it makes me pee too much...
   optionAText: Then go to the bathroom already!
   optionANext: 
-  optionAEmpathyDescription: No effect
-  optionAEmpthayPoint: 0
+  optionAEmpathyDescription: Cold Pivot
+  optionAEmpthayPoint: -1
   optionBText: Why so, if you don't mind me asking?
   optionBNext: choice_herbert_reliability_3
   optionBEmpathyDescription: No effect

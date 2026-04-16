@@ -9,10 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f32ee800ecc343045a73392654bbeac5, type: 3}
-  m_Name: herbert_PC_bark
-  m_EditorClassIdentifier: Assembly-CSharp::BarkSO
+  m_Script: {fileID: 11500000, guid: ee7f539b15b91994e8d45cc9ea1703ac, type: 3}
+  m_Name: herbert_family
+  m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   patientName: herbert
-  barkName: herbert_PC_bark
-  barkText: It's hard to breathe sometimes.
-  triggersDialogue: choice_herbert_PC
+  traitName: herbert_family
+  traitData: herbert_family_bark
+  representedOn: bark
+  socketGO: 
+  triggersDialogue: herbert_family_bark

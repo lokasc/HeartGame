@@ -1,6 +1,7 @@
 using UnityEngine;
 using DG.Tweening;
 using TMPro;
+using UnityEngine.UI;
 
 public class TextBark : MonoBehaviour
 {
@@ -11,9 +12,11 @@ public class TextBark : MonoBehaviour
     private float waitTime = 2f;
     private float moveDistance = 50f;
 
+
     void Start()
     {
         FadeInAll();
+        ForceLayoutRefresh();
     }
 
     public void FadeInAll()
@@ -32,6 +35,12 @@ public class TextBark : MonoBehaviour
     public void SetBarkSO(BarkSO newBarkSO)
     {
         barkSO = newBarkSO;
+    }
+
+    public void ForceLayoutRefresh()
+    {
+        RectTransform rectTransform = GetComponent<RectTransform>();
+        LayoutRebuilder.ForceRebuildLayoutImmediate(rectTransform);
     }
 
     public void ShowDialogue()

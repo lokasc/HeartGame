@@ -23,8 +23,8 @@ MonoBehaviour:
   optionAEmpthayPoint: -1
   optionBText: I'm sorry about your wife. Are you generally eating enough, at least?
   optionBNext: choice_herbert_diet_2
-  optionBEmpathyDescription: Event Addressed
-  optionBEmpthayPoint: 1
+  optionBEmpathyDescription: Validation
+  optionBEmpthayPoint: 2
   notesText: Noted.
   notesButtonText: 
   notesName: note_herbert_diet_brief

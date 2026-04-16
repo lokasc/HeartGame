@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_temperature
-  patientDialogue: 
-  optionAText: 
-  optionANext: 
-  optionAEmpathyDescription: 
-  optionAEmpthayPoint: 0
-  optionBText: 
-  optionBNext: 
-  optionBEmpathyDescription: 
-  optionBEmpthayPoint: 0
-  notesText: 
+  patientDialogue: I'm not feeling warm or anything. I think my temperature is fine.
+  optionAText: Are you really sure though?
+  optionANext: choice_herbert_temperature_2
+  optionAEmpathyDescription: Redundant
+  optionAEmpthayPoint: -1
+  optionBText: So confident!
+  optionBNext: choice_herbert_temperature_3
+  optionBEmpathyDescription: Greeting
+  optionBEmpthayPoint: 1
+  notesText: Alright, that's good to know.
   notesButtonText: 
-  notesName: 
+  notesName: note_herbert_temperature

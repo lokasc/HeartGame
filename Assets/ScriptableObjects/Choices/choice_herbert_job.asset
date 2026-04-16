@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_job
-  patientDialogue: Stayed with those boys through some more difficult years...
+  patientDialogue: Sorry. Old habit from my job--
   optionAText: Oh, so you're retired. Got it.
   optionANext: 
   optionAEmpathyDescription: Event Ignored

@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     [HideInInspector] public string rank;
+
+    [SerializeField] private GameObject diagnosisPanel;
     
     
     private void Awake()
@@ -66,6 +68,15 @@ public class GameManager : MonoBehaviour
         scoreUI.GetComponent<EndScreenUI>().UpdateUI();
         scoreUI.gameObject.SetActive(true);
     }
+
+    public void ShowDiagnosisPanel()
+    {
+        if(diagnosisPanel != null)
+        {
+            diagnosisPanel.SetActive(true);
+        }
+    }
+
 }
 
 

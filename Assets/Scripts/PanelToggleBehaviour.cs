@@ -47,6 +47,23 @@ public class PanelToggleBehaviour : MonoBehaviour
             targetTransform = startPosition;
         }
         
-        
     }
+
+    public void TogglePanel()
+    {
+        toggleComponent.isOn = !toggleComponent.isOn;
+    }
+
+    public void SetPanelToggle(bool isOn)
+    {
+        toggleComponent.isOn = isOn;
+    }
+
+    public void TurnOn()
+    {
+        //TODO: FIX: This is not setup right. This is for the POC.
+        toggleComponent.isOn = true;
+        BarkManager.Instance.IsSpawning = false;
+    }
+
 }

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BarkSO
   patientName: herbert
   barkName: herbert_job_bark
-  barkText: Stayed with those boys through some more difficult years...
+  barkText: Fire? Fire where!?
   triggersDialogue: choice_herbert_job

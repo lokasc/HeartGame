@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NoteSO
   patientName: herbert
   noteName: note_herbert_weight
-  noteText: 
-  symptomsCaught: 0
+  noteText: Patient is gaining weight despite not eating...Most likely fluid retention!
+  symptomsCaught: 1

@@ -94,6 +94,7 @@ public class ChoiceManager : MonoBehaviour
         currentChoice = choiceList.FirstOrDefault(c => c.choiceName == choiceName);
         if (currentChoice != null)
         {
+            BarkManager.Instance.IsSpawning = false;
             choicePanel.SetActive(true);
 
             patientText.text = currentChoice.patientDialogue;
@@ -147,22 +148,26 @@ public class ChoiceManager : MonoBehaviour
         GameManager.instance.empathyPoints += currentChoice.optionAEmpthayPoint;
         Debug.Log("Empathy Points Gained: " + currentChoice.optionAEmpthayPoint.ToString());
         ShowNextChoice(optionANextChoice);
+        BarkManager.Instance.IsSpawning = true;
     }
 
     public void SelectOptionB(){
         GameManager.instance.empathyPoints += currentChoice.optionBEmpthayPoint;
         Debug.Log("Empathy Points Gained: " + currentChoice.optionBEmpthayPoint.ToString());
         ShowNextChoice(optionBNextChoice);
+        BarkManager.Instance.IsSpawning = true;
     }
 
     public void EndConversationEarly(){
         HideChoice();
-        //Handle scoring
+        BarkManager.Instance.IsSpawning = true;
     }
 
     public void TakeNote(){
         NotesManager.Instance.AddNote(currentChoice.notesName);
         HideChoice();
+        BarkManager.Instance.IsSpawning = true;
+
     }
 
 #if UNITY_EDITOR

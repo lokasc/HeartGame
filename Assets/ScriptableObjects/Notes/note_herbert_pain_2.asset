@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f32ee800ecc343045a73392654bbeac5, type: 3}
-  m_Name: herbert_PC_bark
-  m_EditorClassIdentifier: Assembly-CSharp::BarkSO
+  m_Script: {fileID: 11500000, guid: 541ccdd9eb14a424e933ca8eb0e5cf4c, type: 3}
+  m_Name: note_herbert_pain_2
+  m_EditorClassIdentifier: Assembly-CSharp::NoteSO
   patientName: herbert
-  barkName: herbert_PC_bark
-  barkText: It's hard to breathe sometimes.
-  triggersDialogue: choice_herbert_PC
+  noteName: note_herbert_pain_2
+  noteText: Patient repeatedly reports feeling no pain.
+  symptomsCaught: 1

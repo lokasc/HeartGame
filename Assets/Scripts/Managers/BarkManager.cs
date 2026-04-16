@@ -19,6 +19,8 @@ public class BarkManager : MonoBehaviour
     [SerializeField] private RectTransform[] spawnPoints;
     [SerializeField] private RectTransform barkSpawnpoint;
 
+    public bool IsSpawning;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -44,6 +46,7 @@ public class BarkManager : MonoBehaviour
 
     void Start()
     {
+        IsSpawning = true;
         StartCoroutine(SpawnRoutine());
     }
 
@@ -51,17 +54,22 @@ public class BarkManager : MonoBehaviour
     {
         while (barkList.Count > 0)
         {
-            BarkSO bark = barkList[Random.Range(0, barkList.Count)];
-            RectTransform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
-            GameObject barkInstance = Instantiate(barkPrefab, spawnPoint.position, Quaternion.identity, spawnPoint);
-            barkInstance.GetComponent<TextBark>().SetBarkSO(bark);
-            TMP_Text barkTextMesh = barkInstance.GetComponentInChildren<TMP_Text>();
-            if (barkTextMesh != null)
+            if (IsSpawning)
             {
-                barkTextMesh.text = bark.barkText;
-            }
+                BarkSO bark = barkList[Random.Range(0, barkList.Count)];
+                RectTransform spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)];
+                GameObject barkInstance = Instantiate(barkPrefab, spawnPoint.position, Quaternion.identity, spawnPoint);
+                TextBark textBark = barkInstance.GetComponent<TextBark>();
+                textBark.SetBarkSO(bark);
+                TMP_Text barkTextMesh = barkInstance.GetComponentInChildren<TMP_Text>();
+                if (barkTextMesh != null)
+                {
+                    barkTextMesh.text = bark.barkText;
+                    textBark.ForceLayoutRefresh();
+                }
 
-            barkList.Remove(bark);
+                barkList.Remove(bark);
+            }
 
             yield return new WaitForSeconds(spawnInterval);
         }
