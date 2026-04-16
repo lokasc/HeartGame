@@ -751,50 +751,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73399647}
   m_CullTransparentMesh: 1
---- !u!1 &102470701
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 102470703}
-  - component: {fileID: 102470702}
-  m_Layer: 0
-  m_Name: Generator
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &102470702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102470701}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d62c6a7b86258ee4bac02f6162465e42, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SymptomsGenerator
---- !u!4 &102470703
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102470701}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.07824, y: 1.70431, z: -0.02802}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &114060542
 GameObject:
   m_ObjectHideFlags: 0
@@ -4833,7 +4789,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1441863713}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.951023
+  m_Size: 0.95102286
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -10904,8 +10860,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 286424097}
   m_HandleRect: {fileID: 286424096}
   m_Direction: 2
-  m_Value: 0.99997926
-  m_Size: 0.9853008
+  m_Value: 1
+  m_Size: 0.9853006
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -16819,10 +16775,12 @@ MonoBehaviour:
   allChoices:
   - {fileID: 11400000, guid: 8de8b985ff4dd8040b03d2465a0bb32b, type: 2}
   - {fileID: 11400000, guid: 3cca42fd2f5fec6409328bdbaf438c7a, type: 2}
+  - {fileID: 11400000, guid: 6ec1a1fb0f4d2404487aeba37b56beb1, type: 2}
   - {fileID: 11400000, guid: 055c32514693d0840b5e8f20e0dee721, type: 2}
   - {fileID: 11400000, guid: 304ed626ce4b0474b8279744a37b20c0, type: 2}
   - {fileID: 11400000, guid: 1ffbe6e70ccaf8d418c66c6ead3b7fbf, type: 2}
   - {fileID: 11400000, guid: 8736c2ec20394cd4cb985a557dcb18a6, type: 2}
+  - {fileID: 11400000, guid: d8158e8f1367c9c4ca3cad65528123c1, type: 2}
   - {fileID: 11400000, guid: 22969636ca9dbeb478f981c009471c3d, type: 2}
   - {fileID: 11400000, guid: 7c7233078cfb3df498cba38feb6ba381, type: 2}
   - {fileID: 11400000, guid: 80b18754e7aa5f1489fc9d293c10f848, type: 2}
@@ -16830,6 +16788,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7312a107e692ed944be8368796091553, type: 2}
   - {fileID: 11400000, guid: d0e538d9ccb382946970b2102856a7ae, type: 2}
   - {fileID: 11400000, guid: 15dac188e3b2fc94b8c8e980c937e5f1, type: 2}
+  - {fileID: 11400000, guid: 08baca140ebb45a419a72af19675534e, type: 2}
   - {fileID: 11400000, guid: c345c907aa0a92d4b975d183b4ec7153, type: 2}
   - {fileID: 11400000, guid: 07e2ee698f4f2544fb9a2bf95a94dbfc, type: 2}
   - {fileID: 11400000, guid: ba25bf4ffc7bbff48b259c21ceb4c97a, type: 2}
@@ -16839,6 +16798,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 906e715240180b540af3c9f058c1465d, type: 2}
   - {fileID: 11400000, guid: 27d73463f43187c4e98cfae562e7e5b8, type: 2}
   - {fileID: 11400000, guid: d0dd54540f44ed74b85661819a6b8547, type: 2}
+  - {fileID: 11400000, guid: f5e1f08ec0dd0d349b9e6b1cf93a807f, type: 2}
   choicePanel: {fileID: 971752179}
   patientText: {fileID: 144546853}
   optionAPanel: {fileID: 1101690887}
@@ -16873,8 +16833,8 @@ MonoBehaviour:
   o2Slot: {fileID: 398733886}
   bpSlot: {fileID: 1222489044}
   rrSlot: {fileID: 626794683}
-  painSlot: {fileID: 0}
-  urinarySlot: {fileID: 0}
+  painSlot: {fileID: 1103146095}
+  urinarySlot: {fileID: 1005723540}
 --- !u!1 &1824690991
 GameObject:
   m_ObjectHideFlags: 0
@@ -20618,4 +20578,3 @@ SceneRoots:
   - {fileID: 830203711}
   - {fileID: 655830960}
   - {fileID: 1389874590}
-  - {fileID: 102470703}

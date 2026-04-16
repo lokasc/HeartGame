@@ -19,10 +19,10 @@ MonoBehaviour:
   optionANext: choice_herbert_temperature_2
   optionAEmpathyDescription: Redundant
   optionAEmpthayPoint: -1
-  optionBText: So confident!
+  optionBText: Good to know you're feeling well!
   optionBNext: choice_herbert_temperature_3
   optionBEmpathyDescription: Greeting
   optionBEmpthayPoint: 1
-  notesText: Alright, that's good to know.
+  notesText: My bad. Doesn't seem that relevant.
   notesButtonText: 
   notesName: note_herbert_temperature

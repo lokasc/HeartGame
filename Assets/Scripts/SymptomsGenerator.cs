@@ -1,10 +1,11 @@
+#if UNITY_EDITOR
 using UnityEngine;
 using NaughtyAttributes;
-using UnityEditor;
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.Networking;
 using Unity.EditorCoroutines.Editor;
+using UnityEditor;
 
 public class SymptomsGenerator : MonoBehaviour
 {
@@ -456,3 +457,5 @@ public static class CSVParser
         return fields.ToArray();
     }
 }
+
+#endif

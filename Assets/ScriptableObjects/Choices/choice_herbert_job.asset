@@ -14,16 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_job
-  patientDialogue: Sorry. Old habit from my job--
+  patientDialogue: Whoops. Old habit from my job--
   optionAText: Oh, so you're retired. Got it.
-  optionANext: 
+  optionANext: choice_herbert_job_2
   optionAEmpathyDescription: Event Ignored
   optionAEmpthayPoint: -1
   optionBText: "Engine 205, Ladder 118 \u2014 Brooklyn, right? Thank you for your
     service."
-  optionBNext: choice_herbert_job_2
+  optionBNext: choice_herbert_job_3
   optionBEmpathyDescription: Greeting
   optionBEmpthayPoint: 1
-  notesText: I'll make note of that, thank you.
+  notesText: Cool.
   notesButtonText: 
   notesName: note_herbert_job_brief

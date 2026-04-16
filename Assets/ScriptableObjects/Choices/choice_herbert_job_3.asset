@@ -10,19 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae2783a16621e4d4bb4f8c10fcb6c58f, type: 3}
-  m_Name: choice_herbert_job_2
+  m_Name: choice_herbert_job_3
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
-  choiceName: choice_herbert_job_2
-  patientDialogue: I miss it sometimes...
+  choiceName: choice_herbert_job_3
+  patientDialogue: Ha. Yeah. Thirty-one years. Wasn't always easy but I wouldn't
+    trade it.
   optionAText: 
   optionANext: 
-  optionAEmpathyDescription: 
+  optionAEmpathyDescription: No effect
   optionAEmpthayPoint: 0
   optionBText: 
   optionBNext: 
-  optionBEmpathyDescription: 
+  optionBEmpathyDescription: No effect
   optionBEmpthayPoint: 0
-  notesText: 
+  notesText: I'll make note of that, thank you.
   notesButtonText: 
-  notesName: 
+  notesName: note_herbert_job_full
