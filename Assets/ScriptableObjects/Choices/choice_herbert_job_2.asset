@@ -14,16 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_job_2
-  patientDialogue: Ha. Yeah. Thirty-one years. Wasn't always easy but I wouldn't
-    trade it.
+  patientDialogue: I miss it sometimes...
   optionAText: 
   optionANext: 
-  optionAEmpathyDescription: No effect
+  optionAEmpathyDescription: 
   optionAEmpthayPoint: 0
   optionBText: 
   optionBNext: 
-  optionBEmpathyDescription: No effect
+  optionBEmpathyDescription: 
   optionBEmpthayPoint: 0
-  notesText: I'll make note of that, thank you.
+  notesText: Awww...
   notesButtonText: 
-  notesName: note_herbert_job_full
+  notesName: 

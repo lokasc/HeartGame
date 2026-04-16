@@ -18,8 +18,8 @@ MonoBehaviour:
     dinners before bed...
   optionAText: Microwave dinners aren't great for someone in your condition, you
     know.
-  optionANext: 
-  optionAEmpathyDescription: Event Ignored
+  optionANext: choice_herbert_diet_3
+  optionAEmpathyDescription: Cold Pivot
   optionAEmpthayPoint: -1
   optionBText: I'm sorry about your wife. Are you generally eating enough, at least?
   optionBNext: choice_herbert_diet_2

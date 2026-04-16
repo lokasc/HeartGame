@@ -16,15 +16,14 @@ MonoBehaviour:
   choiceName: choice_herbert_PC
   patientDialogue: I've had recent trouble breathing and now I'm worried something
     might be up with my medications...
-  optionAText: We'll figure out the breathing. Let's not jump to conclusions about
-    the medications.
-  optionANext: 
+  optionAText: I don't think so. Your medications are prescribed for a reason.
+  optionANext: choice_herbert_PC_3
   optionAEmpathyDescription: Cold Pivot
   optionAEmpthayPoint: -1
   optionBText: Let's look into both. Which medications are you most concerned about?
   optionBNext: choice_herbert_PC_2
   optionBEmpathyDescription: Greeting
   optionBEmpthayPoint: 1
-  notesText: I'll make note of that and we'll take a look.
+  notesText: I'll write it down, but let's move onto something else for now.
   notesButtonText: 
   notesName: note_herbert_PC_brief

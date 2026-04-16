@@ -77,7 +77,7 @@ public class ChoiceManager : MonoBehaviour
         {
             foreach (ChoiceSO choice in allChoices)
             {
-                if (choice.patientName == patientName)
+                    if (choice.patientName == patientName)
                 {
                     choiceList.Add(choice);
                 }

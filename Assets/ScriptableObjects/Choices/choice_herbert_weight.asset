@@ -20,8 +20,8 @@ MonoBehaviour:
   optionANext: choice_herbert_weight_2
   optionAEmpathyDescription: Redundant
   optionAEmpthayPoint: -1
-  optionBText: That sounds important. Thank you for telling me.
-  optionBNext: 
+  optionBText: I see. It's a good thing you noticed.
+  optionBNext: choice_herbert_weight_3
   optionBEmpathyDescription: Validation
   optionBEmpthayPoint: 2
   notesText: I'll write that down now.

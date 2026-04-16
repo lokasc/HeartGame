@@ -5791,14 +5791,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575763232}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.6773533, w: 0.7356579}
+  m_LocalRotation: {x: -0, y: -0, z: -0.6737994, w: 0.7389144}
   m_LocalPosition: {x: -0.33924317, y: 4.8467703, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2031063350}
   m_Father: {fileID: 1952827382}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -85.274}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -84.722}
 --- !u!1 &579958741
 GameObject:
   m_ObjectHideFlags: 0
@@ -6267,14 +6267,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627619971}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.74139124, w: 0.6710731}
+  m_LocalRotation: {x: -0, y: -0, z: -0.72317755, w: 0.6906622}
   m_LocalPosition: {x: -2.9856203, y: 5.7926893, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 201921106}
   m_Father: {fileID: 2145946037}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -92.635}
 --- !u!1 &628051645
 GameObject:
   m_ObjectHideFlags: 0
@@ -8360,7 +8360,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: c2d3fca6994c57c49a221733b7d252b2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b58201177925c274ab50154e8ef3131f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -16971,6 +16971,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 906e715240180b540af3c9f058c1465d, type: 2}
   - {fileID: 11400000, guid: 27d73463f43187c4e98cfae562e7e5b8, type: 2}
   - {fileID: 11400000, guid: d0dd54540f44ed74b85661819a6b8547, type: 2}
+  - {fileID: 11400000, guid: 1546c6e40ed0b004c8cc10b84c838cd1, type: 2}
   choicePanel: {fileID: 971752179}
   patientText: {fileID: 144546853}
   optionAPanel: {fileID: 1101690887}
@@ -18350,7 +18351,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1343393926, guid: da3d41dc04bf28248bbcd84d331c2c53, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -19430,13 +19431,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031063349}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.003981932, w: 0.99999213}
+  m_LocalRotation: {x: -0, y: -0, z: -0.025775786, w: 0.99966776}
   m_LocalPosition: {x: 6.8199344, y: 0.0000009834796, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 575763233}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.954}
 --- !u!1 &2035698761
 GameObject:
   m_ObjectHideFlags: 0
