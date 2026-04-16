@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NoteSO
   patientName: herbert
   noteName: note_herbert_temperature
-  noteText: Patient is FINEEEE.
+  noteText: Patient temperature is stable.
   symptomsCaught: 1

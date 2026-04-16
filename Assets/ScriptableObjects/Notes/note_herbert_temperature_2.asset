@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NoteSO
   patientName: herbert
   noteName: note_herbert_temperature_2
-  noteText: Patient is kinda defensive.. But fine.
+  noteText: Patient is kinda defensive.. but temperature is stable..
   symptomsCaught: 1
