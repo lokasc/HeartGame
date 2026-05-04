@@ -3,8 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine.UI;
+using Febucci.TextAnimatorForUnity;
+using Febucci.TextAnimatorCore.Data;
+using Febucci.TextAnimatorCore.Typing;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -14,6 +16,8 @@ public class ChoiceManager : MonoBehaviour
 {
     public static ChoiceManager Instance { get; private set; }
 
+    [SerializeField] private TypewriterComponent patientTypewriter;
+
     [SerializeField] private List<ChoiceSO> choiceList;
     [SerializeField] private ChoiceSO[] allChoices; // Auto-populated by weird editor script magic
    
@@ -21,6 +25,8 @@ public class ChoiceManager : MonoBehaviour
 
     [SerializeField] private TMP_Text patientText;
     
+    private float currentPatientSpeakingSpeed;
+
     [SerializeField] private GameObject optionAPanel;
     [SerializeField] private TMP_Text optionAText;
     [SerializeField] private Button optionAButton;
@@ -29,6 +35,8 @@ public class ChoiceManager : MonoBehaviour
 
     [SerializeField] private TMP_Text optionBText;
     [SerializeField] private Button optionBButton;
+
+    [SerializeField] private GameObject notesOptionPanel;
 
     [SerializeField] private TMP_Text notesOptionText;
     [SerializeField] private Button notesOptionButton;
@@ -62,11 +70,34 @@ public class ChoiceManager : MonoBehaviour
     private void OnEnable()
     {
         Patient.OnPatientTraitsLoaded += HandlePatientTraitsLoaded;
+        patientTypewriter.onMessage.AddListener(OnTypewriterMessage);
     }
 
     private void OnDisable()
     {
         Patient.OnPatientTraitsLoaded -= HandlePatientTraitsLoaded;
+        patientTypewriter.onMessage.RemoveListener(OnTypewriterMessage);
+    }
+
+    private void OnTypewriterMessage(EventMarker marker)
+    {
+        Debug.Log("Event: " + marker.name);
+
+        switch (marker.name)
+        {
+            case "ShowAllOptions":
+                ShowAllOptions(currentChoice);
+                break;
+            case "ShowOptionA":
+                ShowOptionA(currentChoice);
+                break;
+            case "ShowOptionB":
+                ShowOptionB(currentChoice);
+                break;
+            case "ShowNotesOption":
+                ShowNotesOption(currentChoice);
+                break;
+        }
     }
 
     private void HandlePatientTraitsLoaded(string patientName)
@@ -83,10 +114,18 @@ public class ChoiceManager : MonoBehaviour
                 }
             }
         }
-        
+
         #if UNITY_EDITOR
         UnityEditor.EditorUtility.SetDirty(this);
         #endif
+    }
+
+    //M7F9255D
+
+    public void SetCurrentPatientSpeakingSpeed(float speed)
+    {
+        currentPatientSpeakingSpeed = speed;
+        Debug.Log($"Set current patient speaking speed to {currentPatientSpeakingSpeed}");
     }
 
     public void ShowChoice(string choiceName)
@@ -94,18 +133,101 @@ public class ChoiceManager : MonoBehaviour
         currentChoice = choiceList.FirstOrDefault(c => c.choiceName == choiceName);
         if (currentChoice != null)
         {
+            optionAText.enabled = false;
+            optionBText.enabled = false;
+            notesOptionText.enabled = false;
+            optionAButton.enabled = false;
+            optionBButton.enabled = false;
+            notesOptionButton.enabled = false;
+
             BarkManager.Instance.IsSpawning = false;
             choicePanel.SetActive(true);
 
-            patientText.text = currentChoice.patientDialogue;
+            patientTypewriter.SetTypewriterSpeed(currentPatientSpeakingSpeed);
+            patientTypewriter.ShowText("Hello!<?ShowOptionA> I am wondering if you think <?ShowOptionB> I should for a backflip<?ShowNotesOption> now or later.");
 
+            // patientTypewriter.ShowText(currentChoice.patientDialogue);
+            StartCoroutine(RebuildChoiceLayoutNextFrame());
+        }
+    }
 
+    private IEnumerator RebuildChoiceLayoutNextFrame()
+    {
+        yield return null;
+
+        patientText.ForceMeshUpdate();
+        Canvas.ForceUpdateCanvases();
+
+        LayoutRebuilder.ForceRebuildLayoutImmediate(
+            choicePanel.GetComponent<RectTransform>()
+        );
+    }
+
+    private void ShowOptionA(ChoiceSO choice)
+    {
             if(optionAText == null || string.IsNullOrEmpty(currentChoice.optionAText)){
                 optionAPanel.SetActive(false);
             }
             else
             {
                 optionAPanel.SetActive(true);
+                optionAText.enabled = true;
+                optionAButton.enabled = true;
+            }
+
+            optionAText.text = currentChoice.optionAText;
+            optionANextChoice = choiceList.FirstOrDefault(c => c.choiceName == currentChoice.optionANext);
+
+            Canvas.ForceUpdateCanvases();
+            LayoutRebuilder.ForceRebuildLayoutImmediate(
+                choicePanel.GetComponent<RectTransform>()
+            );
+    }
+
+    private void ShowOptionB(ChoiceSO choice)
+    {
+            if(optionBText == null || string.IsNullOrEmpty(currentChoice.optionBText)){
+                optionBPanel.SetActive(false);
+            }
+            else
+            {
+                optionBPanel.SetActive(true);
+                optionBText.enabled = true;
+                optionBButton.enabled = true;
+            }
+
+            optionBText.text = currentChoice.optionBText;
+            optionBNextChoice = choiceList.FirstOrDefault(c => c.choiceName == currentChoice.optionBNext);
+
+            Canvas.ForceUpdateCanvases();
+            LayoutRebuilder.ForceRebuildLayoutImmediate(
+                choicePanel.GetComponent<RectTransform>()
+            );
+    }
+
+    private void ShowNotesOption(ChoiceSO choice)
+    {
+            notesOptionPanel.SetActive(true);
+            notesOptionText.enabled = true;
+            notesOptionButton.enabled = true;
+            notesOptionText.text = currentChoice.notesText;
+
+            Canvas.ForceUpdateCanvases();
+            LayoutRebuilder.ForceRebuildLayoutImmediate(
+                choicePanel.GetComponent<RectTransform>()
+            );
+    }
+
+    private void ShowAllOptions(ChoiceSO choice)
+    {
+            if(optionAText == null || string.IsNullOrEmpty(currentChoice.optionAText)){
+                optionAPanel.SetActive(false);
+            }
+            else
+            {
+                optionAPanel.SetActive(true);
+                optionAText.enabled = true;
+                optionAButton.enabled = true;
             }
 
             optionAText.text = currentChoice.optionAText;
@@ -117,14 +239,23 @@ public class ChoiceManager : MonoBehaviour
             else
             {
                 optionBPanel.SetActive(true);
+                optionBText.enabled = true;
+                optionBButton.enabled = true;
             }
 
             optionBText.text = currentChoice.optionBText;
             optionBNextChoice = choiceList.FirstOrDefault(c => c.choiceName == currentChoice.optionBNext);
 
+            notesOptionPanel.SetActive(true);
+            notesOptionText.enabled = true;
+            notesOptionButton.enabled = true;
             notesOptionText.text = currentChoice.notesText;
-        }
 
+            Canvas.ForceUpdateCanvases();
+
+            LayoutRebuilder.ForceRebuildLayoutImmediate(
+                choicePanel.GetComponent<RectTransform>()
+            );
     }
 
     public void HideChoice()
