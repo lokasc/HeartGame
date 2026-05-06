@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
@@ -14,6 +15,7 @@ using UnityEditor;
 
 public class ChoiceManager : MonoBehaviour
 {
+    public event Action<Answer> OnAnswerSelected;
     public static ChoiceManager Instance { get; private set; }
 
     [SerializeField] private TypewriterComponent patientTypewriter;
@@ -275,16 +277,31 @@ public class ChoiceManager : MonoBehaviour
         }
     }
 
+    public class Answer
+    {
+        public string Question;
+        public string AnswerName;
+        public int EmpathyGained;
+    }
+    
+    
     public void SelectOptionA(){
-        GameManager.instance.empathyPoints += currentChoice.optionAEmpthayPoint;
-        Debug.Log("Empathy Points Gained: " + currentChoice.optionAEmpthayPoint.ToString());
+        OnAnswerSelected?.Invoke(new Answer {  AnswerName = currentChoice.optionAText, 
+            EmpathyGained = currentChoice.optionAEmpthayPoint,
+            Question = currentChoice.patientDialogue   
+        });
+        
+        
         ShowNextChoice(optionANextChoice);
         BarkManager.Instance.IsSpawning = true;
     }
 
     public void SelectOptionB(){
-        GameManager.instance.empathyPoints += currentChoice.optionBEmpthayPoint;
-        Debug.Log("Empathy Points Gained: " + currentChoice.optionBEmpthayPoint.ToString());
+        OnAnswerSelected?.Invoke(new Answer {  AnswerName = currentChoice.optionBText, 
+            EmpathyGained = currentChoice.optionBEmpthayPoint,
+            Question = currentChoice.patientDialogue   
+        });
+       
         ShowNextChoice(optionBNextChoice);
         BarkManager.Instance.IsSpawning = true;
     }

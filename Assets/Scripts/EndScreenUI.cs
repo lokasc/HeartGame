@@ -6,6 +6,7 @@ using DG.Tweening;
 
 public class EndScreenUI : MonoBehaviour
 {
+    public EndScreenLineGraph graph;
     public TextMeshProUGUI rank;
     public TextMeshProUGUI empathyPoints;
 
@@ -33,6 +34,7 @@ public class EndScreenUI : MonoBehaviour
     private void OnEnable()
     {
         SpawnStars(GameManager.instance.efficiencyStars);
+        EndScreenLineGraph.instance.BuildGraph();
     }
 
     /// <summary>
