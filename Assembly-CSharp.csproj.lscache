@@ -59,6 +59,7 @@ Assets/
   GoogleSheetReader.cs
   Managers/
    BarkManager.cs
+   BodyManager.cs
    ChartManager.cs
    ChoiceManager.cs
    GameManager.cs
