@@ -4,6 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEditor.Rendering;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using System;
+using Unity.VisualScripting;
+
+
+
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -27,7 +34,22 @@ public class ChartManager : MonoBehaviour
     [SerializeField] private TMP_Text bpSlot;
     [SerializeField] private TMP_Text rrSlot;
     [SerializeField] private TMP_Text painSlot;
-    [SerializeField] private TMP_Text urinarySlot;
+    [SerializeField] private TMP_Text edemaSlot;
+    [SerializeField] private TMP_Text efSlot;
+    [SerializeField] private TMP_Text hrSlot;
+
+    [SerializeField] private TMP_Text vitalsNameSlot;
+    [SerializeField] private TMP_Text intakeNameSlot;
+
+
+    [SerializeField] private Button personalIngoButton;
+    [SerializeField] private Button vitalsInfoButton;
+    [SerializeField] private Button instakeInfoButton;
+
+    [SerializeField] private GameObject personalInfoPanel;
+    [SerializeField] private GameObject vitalsPanel;
+    [SerializeField] private GameObject intakePanel;
+
 
     private TraitSO weightTrait;
     private TraitSO raceTrait;
@@ -41,7 +63,9 @@ public class ChartManager : MonoBehaviour
     private TraitSO bpTrait;
     private TraitSO rrTrait;
     private TraitSO painTrait;
-    private TraitSO urinaryTrait;
+    private TraitSO edemaTrait;
+    private TraitSO efTrait;
+    private TraitSO hrTrait;
 
     private void Awake()
     {
@@ -54,6 +78,19 @@ public class ChartManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject);
         }
+    }
+
+    private void Start()
+    {
+        personalIngoButton.onClick.AddListener(() => ShowPanel(personalInfoPanel));
+        vitalsInfoButton.onClick.AddListener(() => ShowPanel(vitalsPanel));
+        instakeInfoButton.onClick.AddListener(() => ShowPanel(intakePanel));
+
+        personalInfoPanel.SetActive(false);
+        vitalsPanel.SetActive(false);
+        intakePanel.SetActive(false);
+
+        ShowPanel(personalInfoPanel);
     }
 
     private void OnEnable()
@@ -100,8 +137,27 @@ public class ChartManager : MonoBehaviour
         this.rrTrait = rrTrait;
         ImportChartTrait("pain", painSlot, out TraitSO painTrait);
         this.painTrait = painTrait;
-        ImportChartTrait("urinary", urinarySlot, out TraitSO urinaryTrait);
-        this.urinaryTrait = urinaryTrait;
+        ImportChartTrait("edema", edemaSlot, out TraitSO edemaTrait);
+        this.edemaTrait = edemaTrait;
+        ImportChartTrait("ef", efSlot, out TraitSO efTrait);
+        this.efTrait = efTrait;
+        ImportChartTrait("hr", hrSlot, out TraitSO hrTrait);
+        this.hrTrait = hrTrait;
+
+        UpdatePanelNameSlots();
+    }
+
+    private void UpdatePanelNameSlots()
+    {
+        vitalsNameSlot.text = $"{fullNameTrait.traitData}";
+        intakeNameSlot.text = $"{fullNameTrait.traitData}";
+    }
+
+    private void ShowPanel(GameObject panelToShow)
+    {
+        personalInfoPanel.SetActive(panelToShow == personalInfoPanel);
+        vitalsPanel.SetActive(panelToShow == vitalsPanel);
+        intakePanel.SetActive(panelToShow == intakePanel);
     }
 
     private void ImportChartTrait(string traitSuffix, TMP_Text targetSlot, out TraitSO foundTrait){
@@ -130,12 +186,6 @@ public class ChartManager : MonoBehaviour
     public void ClickPainButton(){
         if(painTrait.triggersDialogue !=null){
             ChoiceManager.Instance.ShowChoice(painTrait.triggersDialogue);
-        }
-    }
-
-    public void ClickUrinaryButton(){
-        if(urinaryTrait.triggersDialogue !=null){
-            ChoiceManager.Instance.ShowChoice(urinaryTrait.triggersDialogue);
         }
     }
 }

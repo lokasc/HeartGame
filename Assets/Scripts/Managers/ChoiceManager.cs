@@ -122,8 +122,6 @@ public class ChoiceManager : MonoBehaviour
         #endif
     }
 
-    //M7F9255D
-
     public void SetCurrentPatientSpeakingSpeed(float speed)
     {
         currentPatientSpeakingSpeed = speed;
@@ -146,9 +144,9 @@ public class ChoiceManager : MonoBehaviour
             choicePanel.SetActive(true);
 
             patientTypewriter.SetTypewriterSpeed(currentPatientSpeakingSpeed);
-            patientTypewriter.ShowText("Hello!<?ShowOptionA> I am wondering if you think <?ShowOptionB> I should for a backflip<?ShowNotesOption> now or later.");
+            // patientTypewriter.ShowText("Hello!<?ShowOptionA> I am wondering if you think <?ShowOptionB> I should for a backflip<?ShowNotesOption> now or later. <?ShowAllOptions>");
 
-            // patientTypewriter.ShowText(currentChoice.patientDialogue);
+            patientTypewriter.ShowText($"{currentChoice.patientDialogue}<?ShowAllOptions>");
             StartCoroutine(RebuildChoiceLayoutNextFrame());
         }
     }
