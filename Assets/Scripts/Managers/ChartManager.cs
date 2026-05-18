@@ -41,6 +41,10 @@ public class ChartManager : MonoBehaviour
     [SerializeField] private TMP_Text vitalsNameSlot;
     [SerializeField] private TMP_Text intakeNameSlot;
 
+    [SerializeField] private Button weightButton;
+    [SerializeField] private Button tempButton;
+    [SerializeField] private Button painButton;
+
 
     [SerializeField] private Button personalIngoButton;
     [SerializeField] private Button vitalsInfoButton;
@@ -85,6 +89,10 @@ public class ChartManager : MonoBehaviour
         personalIngoButton.onClick.AddListener(() => ShowPanel(personalInfoPanel));
         vitalsInfoButton.onClick.AddListener(() => ShowPanel(vitalsPanel));
         instakeInfoButton.onClick.AddListener(() => ShowPanel(intakePanel));
+
+        weightButton.onClick.AddListener(ClickWeightButton);
+        tempButton.onClick.AddListener(ClickTempButton);
+        painButton.onClick.AddListener(ClickPainButton);
 
         personalInfoPanel.SetActive(false);
         vitalsPanel.SetActive(false);
