@@ -324,7 +324,6 @@ Library/ScriptAssemblies/
  UnityEngine.UI.dll
 Packages/com.febucci.text-animator-unity/Libraries/Runtime/Febucci.TextAnimatorCore.dll
 Temp/bin/Debug/
- Febucci.Attributes.Runtime.dll
  Febucci.TextAnimatorForUnity.Runtime.dll
  Unity.InputSystem.dll
 

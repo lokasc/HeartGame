@@ -359,7 +359,6 @@ Packages/com.febucci.text-animator-unity/Libraries/Editor/
  Febucci.TextAnimatorForUnity.Input.Editor.dll
 Packages/com.febucci.text-animator-unity/Libraries/Runtime/Febucci.TextAnimatorCore.dll
 Temp/bin/Debug/
- Unity.Burst.dll
  Unity.Collections.dll
  Unity.Mathematics.dll
 

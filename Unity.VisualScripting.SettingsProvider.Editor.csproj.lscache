@@ -370,7 +370,6 @@ Packages/com.febucci.text-animator-unity/Libraries/Editor/
  Febucci.TextAnimatorForUnity.Input.Editor.dll
 Packages/com.febucci.text-animator-unity/Libraries/Runtime/Febucci.TextAnimatorCore.dll
 Temp/bin/Debug/
- Unity.InputSystem.dll
  Unity.VisualScripting.Core.dll
  Unity.VisualScripting.Core.Editor.dll
  Unity.VisualScripting.Flow.dll

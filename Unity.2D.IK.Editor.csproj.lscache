@@ -372,11 +372,8 @@ Temp/bin/Debug/
  Unity.2D.Common.Editor.dll
  Unity.2D.Common.Runtime.dll
  Unity.2D.IK.Runtime.dll
- Unity.Burst.dll
- Unity.Collections.dll
  Unity.InternalAPIEditorBridge.001.dll
  Unity.InternalAPIEngineBridge.001.dll
- Unity.Mathematics.dll
 
 [analyzerReferences]
 ../../../../../../Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/

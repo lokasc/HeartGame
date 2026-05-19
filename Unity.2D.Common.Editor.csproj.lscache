@@ -372,7 +372,6 @@ Packages/com.febucci.text-animator-unity/Libraries/Runtime/Febucci.TextAnimatorC
 Temp/bin/Debug/
  Unity.2D.Common.Runtime.dll
  Unity.Burst.dll
- Unity.Collections.dll
  Unity.Mathematics.dll
 
 [analyzerReferences]

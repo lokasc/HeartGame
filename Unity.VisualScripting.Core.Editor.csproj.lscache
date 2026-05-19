@@ -880,9 +880,7 @@ Packages/com.febucci.text-animator-unity/Libraries/Editor/
  Febucci.TextAnimatorForUnity.Editor.dll
  Febucci.TextAnimatorForUnity.Input.Editor.dll
 Packages/com.febucci.text-animator-unity/Libraries/Runtime/Febucci.TextAnimatorCore.dll
-Temp/bin/Debug/
- Unity.InputSystem.dll
- Unity.VisualScripting.Core.dll
+Temp/bin/Debug/Unity.VisualScripting.Core.dll
 
 [analyzerReferences]
 ../../../../../../Program Files/Unity/Hub/Editor/6000.3.9f1/Editor/Data/Tools/BuildPipeline/Unity.SourceGenerators/
