@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   patientName: herbert
   traitName: herbert_jvd
-  traitData: generic_jdv_
+  traitData: generic_jvd
   representedOn: body
   socketGO: 
   triggersDialogue: 

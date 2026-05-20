@@ -316,7 +316,8 @@ public class SymptomsGenerator : MonoBehaviour
             newSO.patientName = values[0];
             newSO.noteName = values[1];
             newSO.noteText = values[2];
-            newSO.symptomsCaught = int.Parse(values[3]);
+            newSO.symptomCaught = values[3];    
+            newSO.symptomSharesCaught = int.Parse(values[4]);
             
             
             //newSO.devNotes = string.IsNullOrEmpty(values[6]) ? "No description provided" : values[6];

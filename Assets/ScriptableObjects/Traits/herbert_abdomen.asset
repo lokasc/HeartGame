@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ee7f539b15b91994e8d45cc9ea1703ac, type: 3}
-  m_Name: herbert_hand_finger_clubbing
+  m_Name: herbert_abdomen
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   patientName: herbert
-  traitName: herbert_hand_finger_clubbing
-  traitData: 
+  traitName: herbert_abdomen
+  traitData: herbert_abdomen_art
   representedOn: body
   socketGO: 
-  triggersDialogue: herbert_clubbing_art
+  triggersDialogue: herbert_abdomen_art

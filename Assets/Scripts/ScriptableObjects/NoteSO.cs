@@ -6,5 +6,6 @@ public class NoteSO : ScriptableObject
     public string patientName;
     public string noteName;
     public string noteText;
-    public int symptomsCaught;
+    public int symptomSharesCaught;
+    public string symptomCaught;
 }
