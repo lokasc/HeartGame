@@ -4,10 +4,14 @@ using UnityEditor;
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine.Networking;
-using Unity.EditorCoroutines.Editor;
+
+#if UNITY_EDITOR
+    using Unity.EditorCoroutines.Editor;
+#endif
 
 public class SymptomsGenerator : MonoBehaviour
 {
+    #if UNITY_EDITOR
     [InfoBox("Publish your Google Sheet via File > Share > Publish to web > CSV. Then paste the published URLs below. To target different tabs, change the gid= number at the end of each URL (find the gid in the browser URL bar when clicking each tab).")]
 
     [Header("Google Sheets URLs")]
@@ -31,11 +35,14 @@ public class SymptomsGenerator : MonoBehaviour
     [Button]
     public void Generate()
     {
-        EditorCoroutineUtility.StartCoroutineOwnerless(FetchAndGenerateSymptoms());
+        #if UNITY_EDITOR
+           EditorCoroutineUtility.StartCoroutineOwnerless(FetchAndGenerateSymptoms());
+        #endif
     }
 
     private IEnumerator FetchAndGenerateSymptoms()
     {
+        #if UNITY_EDITOR
         Debug.Log("Fetching everything sheet from Google Sheets...");
 
         // For Symptoms 
@@ -94,6 +101,7 @@ public class SymptomsGenerator : MonoBehaviour
             
             ProcessNoteCSV(request.downloadHandler.text);
         }
+        #endif
     }
 
     private void ProcessTraitCSV(string csvText)
@@ -295,7 +303,9 @@ public class SymptomsGenerator : MonoBehaviour
 
         Debug.Log("Created " + counter + " Choice");
         Debug.LogWarning("Overrided " + overridedCounter + " Choice");
-        AssetDatabase.SaveAssets();
+        #if UNITY_EDITOR
+            AssetDatabase.SaveAssets();
+        #endif
     }
    
     private void ProcessNoteCSV(string csvText)
@@ -326,13 +336,16 @@ public class SymptomsGenerator : MonoBehaviour
             Debug.Log(newSO.noteName);
             if (AssetDatabase.AssetPathExists(nameAndPath))
                 overridedCounter++;
-
-            AssetDatabase.CreateAsset(newSO, nameAndPath);
+            #if UNITY_EDITOR
+                AssetDatabase.CreateAsset(newSO, nameAndPath);
+            #endif
         }
     
         Debug.Log("Created " + counter + " Note");
         Debug.LogWarning("Overrided " + overridedCounter + " Note");
-        AssetDatabase.SaveAssets();
+        #if UNITY_EDITOR
+            AssetDatabase.SaveAssets();
+        #endif
     }
     
     
@@ -456,4 +469,5 @@ public static class CSVParser
         fields.Add(current.ToString().Trim());
         return fields.ToArray();
     }
+#endif
 }
