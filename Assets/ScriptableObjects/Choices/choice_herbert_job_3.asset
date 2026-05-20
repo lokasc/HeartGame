@@ -18,11 +18,11 @@ MonoBehaviour:
     trade it.
   optionAText: 
   optionANext: 
-  optionAEmpathyDescription: No effect
+  optionAEmpathyDescription: 
   optionAEmpthayPoint: 0
   optionBText: 
   optionBNext: 
-  optionBEmpathyDescription: No effect
+  optionBEmpathyDescription: 
   optionBEmpthayPoint: 0
   notesText: I'll make note of that, thank you.
   notesButtonText: 

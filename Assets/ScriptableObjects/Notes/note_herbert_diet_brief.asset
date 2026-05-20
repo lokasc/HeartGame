@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NoteSO
   patientName: herbert
   noteName: note_herbert_diet_brief
-  noteText: Patient eating microwave dinners. Dietary habits noted.
-  symptomsCaught: 0
+  noteText: Patient has a poor diet.
+  symptomSharesCaught: 0
+  symptomCaught: 

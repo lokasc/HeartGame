@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   patientName: herbert
   traitName: herbert_PC
-  traitData: herbert_PC_bark
-  representedOn: bark
+  traitData: 'Main Complaint: Difficulty Breathing'
+  representedOn: chart
   socketGO: 
-  triggersDialogue: herbert_PC_bark
+  triggersDialogue: choice_herbert_breathing_severity

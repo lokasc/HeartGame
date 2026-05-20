@@ -15,12 +15,11 @@ MonoBehaviour:
   patientName: herbert
   choiceName: choice_herbert_job
   patientDialogue: Whoops. Old habit from my job--
-  optionAText: Oh, so you're retired. Got it.
+  optionAText: Oh, so you're retired?
   optionANext: choice_herbert_job_2
   optionAEmpathyDescription: Event Ignored
   optionAEmpthayPoint: -1
-  optionBText: "Engine 205, Ladder 118 \u2014 Brooklyn, right? Thank you for your
-    service."
+  optionBText: No worries. Where did you work, if you don't mind me asking?
   optionBNext: choice_herbert_job_3
   optionBEmpathyDescription: Greeting
   optionBEmpthayPoint: 1

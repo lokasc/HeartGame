@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_temperature_2
-  patientDialogue: I'm sure, I'm sure.
+  patientDialogue: I am. Anyway, I have more pressing concerns.
   optionAText: 
   optionANext: 
   optionAEmpathyDescription: 
@@ -25,4 +25,4 @@ MonoBehaviour:
   optionBEmpthayPoint: 0
   notesText: Let's move on then.
   notesButtonText: 
-  notesName: note_herbert_temperature_2
+  notesName: note_herbert_temperature_full

@@ -15,4 +15,5 @@ MonoBehaviour:
   patientName: herbert
   noteName: note_herbert_job_full
   noteText: Retired firefighter, 31 years of service. Difficult period referenced.
-  symptomsCaught: 0
+  symptomSharesCaught: 0
+  symptomCaught: 

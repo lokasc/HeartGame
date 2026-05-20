@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_job_2
-  patientDialogue: I miss it sometimes...
+  patientDialogue: Yes. I miss it sometimes...
   optionAText: 
   optionANext: 
   optionAEmpathyDescription: 
@@ -23,6 +23,6 @@ MonoBehaviour:
   optionBNext: 
   optionBEmpathyDescription: 
   optionBEmpthayPoint: 0
-  notesText: Awww...
+  notesText: Understandable. Let's move on.
   notesButtonText: 
-  notesName: 
+  notesName: note_herbert_job_brief

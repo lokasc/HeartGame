@@ -15,4 +15,4 @@ MonoBehaviour:
   patientName: herbert
   barkName: herbert_PC_bark
   barkText: It's hard to breathe sometimes.
-  triggersDialogue: choice_herbert_PC
+  triggersDialogue: choice_herbert_breathing_severity

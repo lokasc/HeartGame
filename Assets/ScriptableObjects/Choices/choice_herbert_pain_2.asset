@@ -17,12 +17,12 @@ MonoBehaviour:
   patientDialogue: Ok...?
   optionAText: 
   optionANext: 
-  optionAEmpathyDescription: No effect
+  optionAEmpathyDescription: 
   optionAEmpthayPoint: 0
   optionBText: 
   optionBNext: 
   optionBEmpathyDescription: 
   optionBEmpthayPoint: 0
-  notesText: 
+  notesText: I always like to double check.
   notesButtonText: 
-  notesName: note_herbert_pain_2
+  notesName: note_herbert_pain_full

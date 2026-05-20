@@ -15,14 +15,14 @@ MonoBehaviour:
   patientName: herbert
   choiceName: choice_herbert_family
   patientDialogue: Both my boys moved to the west coast a few years ago.
-  optionAText: No family in the area. Got it.
+  optionAText: That's actually pretty cool.
   optionANext: choice_herbert_family_2
-  optionAEmpathyDescription: Event Ignored
-  optionAEmpthayPoint: -1
+  optionAEmpathyDescription: Interuption
+  optionAEmpthayPoint: 0
   optionBText: Do you two stay in touch? Do you have much support around here?
   optionBNext: choice_herbert_family_2
   optionBEmpathyDescription: Greeting
   optionBEmpthayPoint: 1
-  notesText: That's a shame.
+  notesText: Sounds pretty lonely.
   notesButtonText: 
   notesName: note_herbert_family_brief

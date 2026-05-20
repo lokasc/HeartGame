@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NoteSO
   patientName: herbert
   noteName: note_herbert_diet_full
-  noteText: Patient bereaved, eating irregularly. Poor appetite likely grief-related.
-  symptomsCaught: 1
+  noteText: Patient bereaved, eating irregularly. Poor appetite is likely grief-related.
+  symptomSharesCaught: 0
+  symptomCaught: 

@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_reliability_3
-  patientDialogue: 'Usually I''m [too tired to get up.]'
+  patientDialogue: Usually I'm too tired to get up.
   optionAText: 
   optionANext: 
-  optionAEmpathyDescription: No effect
+  optionAEmpathyDescription: 
   optionAEmpthayPoint: 0
   optionBText: 
   optionBNext: 
-  optionBEmpathyDescription: No effect
+  optionBEmpathyDescription: 
   optionBEmpthayPoint: 0
   notesText: Thank you for being honest with me.
   notesButtonText: 
-  notesName: note_herbert_reliability_2
+  notesName: note_herbert_reliability_full

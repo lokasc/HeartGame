@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2783a16621e4d4bb4f8c10fcb6c58f, type: 3}
+  m_Name: choice_herbert_heart_sound
+  m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
+  patientName: herbert
+  choiceName: choice_herbert_heart_sound
+  patientDialogue: You want to listen to my heartbeat? Why?
+  optionAText: It's just protocol.
+  optionANext: choice_herbert_heart_sound_2
+  optionAEmpathyDescription: Redundant
+  optionAEmpthayPoint: -1
+  optionBText: Heart Failure can manifest different symptoms.
+  optionBNext: choice_herbert_heart_sound_3
+  optionBEmpathyDescription: Greeting
+  optionBEmpthayPoint: 1
+  notesText: I'm just noting down your heartbeat and any irregularities.
+  notesButtonText: 
+  notesName: note_herbert_heart_brief

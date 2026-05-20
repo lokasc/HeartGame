@@ -17,11 +17,11 @@ MonoBehaviour:
   patientDialogue: We call when we can. It's fine. I manage.
   optionAText: 
   optionANext: 
-  optionAEmpathyDescription: No effect
+  optionAEmpathyDescription: 
   optionAEmpthayPoint: 0
   optionBText: 
   optionBNext: 
-  optionBEmpathyDescription: No effect
+  optionBEmpathyDescription: 
   optionBEmpthayPoint: 0
   notesText: That's nice!
   notesButtonText: 

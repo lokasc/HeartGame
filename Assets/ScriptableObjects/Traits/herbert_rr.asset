@@ -17,4 +17,4 @@ MonoBehaviour:
   traitData: 24
   representedOn: chart
   socketGO: 
-  triggersDialogue: 
+  triggersDialogue: choice_herbert_vitals_breathing

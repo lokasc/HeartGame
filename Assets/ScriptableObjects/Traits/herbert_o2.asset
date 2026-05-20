@@ -17,4 +17,4 @@ MonoBehaviour:
   traitData: SpO2 92%
   representedOn: chart
   socketGO: 
-  triggersDialogue: 
+  triggersDialogue: choice_herbert_oxygen

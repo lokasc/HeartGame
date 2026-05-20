@@ -16,14 +16,14 @@ MonoBehaviour:
   choiceName: choice_herbert_reliability_2
   patientDialogue: To be honest with you, I [skip the water pill] sometimes cause
     it makes me pee too much...
-  optionAText: Then go to the bathroom already!
-  optionANext: 
-  optionAEmpathyDescription: Cold Pivot
-  optionAEmpthayPoint: -1
+  optionAText: You need to be less forgetful.
+  optionANext: choice_herbert_reliability_4
+  optionAEmpathyDescription: Interuption
+  optionAEmpthayPoint: 0
   optionBText: Why so, if you don't mind me asking?
   optionBNext: choice_herbert_reliability_3
-  optionBEmpathyDescription: No effect
-  optionBEmpthayPoint: 0
-  notesText: Maybe set a reminder to take your meds.
+  optionBEmpathyDescription: Validation
+  optionBEmpthayPoint: 2
+  notesText: You should set a reminder to take your meds.
   notesButtonText: 
-  notesName: note_herbert_reliability_2
+  notesName: note_herbert_reliability_brief

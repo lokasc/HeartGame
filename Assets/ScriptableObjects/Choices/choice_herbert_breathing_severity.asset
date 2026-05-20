@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae2783a16621e4d4bb4f8c10fcb6c58f, type: 3}
+  m_Name: choice_herbert_breathing_severity
+  m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
+  patientName: herbert
+  choiceName: choice_herbert_breathing_severity
+  patientDialogue: I just can't seem to catch my breath these past few days...
+  optionAText: You should relax. It's giving anxiety.
+  optionANext: choice_herbert_breathing_2
+  optionAEmpathyDescription: Cold Pivot
+  optionAEmpthayPoint: -1
+  optionBText: That sounds uncomfortable. When did this start getting worse?
+  optionBNext: choice_herbert_breathing_3
+  optionBEmpathyDescription: Validation
+  optionBEmpthayPoint: 2
+  notesText: I'll make sure to remember that.
+  notesButtonText: 
+  notesName: note_herbert_breathinghistory_brief

@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NoteSO
   patientName: herbert
   noteName: note_herbert_family_full
-  noteText: Two sons, out of state. Limited local support network. Patient minimizing.
-  symptomsCaught: 1
+  noteText: Two sons, out of state. Limited local support network.
+  symptomSharesCaught: 0
+  symptomCaught: 

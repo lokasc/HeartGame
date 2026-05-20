@@ -15,14 +15,14 @@ MonoBehaviour:
   patientName: herbert
   choiceName: choice_herbert_reliability
   patientDialogue: I even forgot to take my medications last night, too.
-  optionAText: You should be more disciplined.
-  optionANext: 
+  optionAText: That doesn't sound good.
+  optionANext: choice_herbert_reliability_2
   optionAEmpathyDescription: Event Ignored
   optionAEmpthayPoint: -1
   optionBText: I see...Have you not been taking your medications regularly?
   optionBNext: choice_herbert_reliability_2
-  optionBEmpathyDescription: No effect
+  optionBEmpathyDescription: 
   optionBEmpthayPoint: 0
   notesText: That can't be good.
   notesButtonText: 
-  notesName: note_herbert_reliability
+  notesName: note_herbert_reliability_brief

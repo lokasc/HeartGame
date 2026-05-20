@@ -10,6 +10,8 @@ public class EndScreenUI : MonoBehaviour
     public TextMeshProUGUI rank;
     public TextMeshProUGUI empathyPoints;
 
+    [SerializeField] private TMP_Text symptomScoreText;
+
     public Transform starHBox;
     public GameObject starPrefab;
 
@@ -29,6 +31,7 @@ public class EndScreenUI : MonoBehaviour
     {
         rank.text = GameManager.instance.rank;
         empathyPoints.text = "Empathy: " + GameManager.instance.empathyPoints.ToString();
+        symptomScoreText.text = "Symptoms Caught: " + GameManager.instance.SymptomPercentageCaught.ToString("F0") + "%";
     }
 
     private void OnEnable()

@@ -261,6 +261,7 @@ public class ChoiceManager : MonoBehaviour
     public void HideChoice()
     {
         choicePanel.SetActive(false);
+        BarkManager.Instance.IsSpawning = true;
     }
 
     public void ShowNextChoice(ChoiceSO nextChoice)
@@ -291,7 +292,6 @@ public class ChoiceManager : MonoBehaviour
         
         
         ShowNextChoice(optionANextChoice);
-        BarkManager.Instance.IsSpawning = true;
     }
 
     public void SelectOptionB(){
@@ -301,19 +301,15 @@ public class ChoiceManager : MonoBehaviour
         });
        
         ShowNextChoice(optionBNextChoice);
-        BarkManager.Instance.IsSpawning = true;
     }
 
     public void EndConversationEarly(){
         HideChoice();
-        BarkManager.Instance.IsSpawning = true;
     }
 
     public void TakeNote(){
         NotesManager.Instance.AddNote(currentChoice.notesName);
         HideChoice();
-        BarkManager.Instance.IsSpawning = true;
-
     }
 
 #if UNITY_EDITOR

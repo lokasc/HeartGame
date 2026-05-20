@@ -16,7 +16,7 @@ MonoBehaviour:
   choiceName: choice_herbert_weight
   patientDialogue: I've been gaining weight, but I don't eat more than I usuallly
     do.
-  optionAText: It says here you're 208 pounds.
+  optionAText: Are you really sure you're not eating more than usual?
   optionANext: choice_herbert_weight_2
   optionAEmpathyDescription: Redundant
   optionAEmpthayPoint: -1
@@ -24,6 +24,6 @@ MonoBehaviour:
   optionBNext: choice_herbert_weight_3
   optionBEmpathyDescription: Validation
   optionBEmpthayPoint: 2
-  notesText: I'll write that down now.
+  notesText: Interesting.
   notesButtonText: 
-  notesName: note_herbert_weight
+  notesName: note_herbert_weight_brief

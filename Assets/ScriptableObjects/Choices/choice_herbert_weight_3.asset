@@ -23,6 +23,6 @@ MonoBehaviour:
   optionBNext: 
   optionBEmpathyDescription: 
   optionBEmpthayPoint: 0
-  notesText: I meant to say it's good that you're observant.
+  notesText: It might be another underlying symptom we need to note.
   notesButtonText: 
-  notesName: note_herbert_weight_2
+  notesName: note_herbert_weight_full

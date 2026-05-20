@@ -15,15 +15,14 @@ MonoBehaviour:
   patientName: herbert
   choiceName: choice_herbert_pain
   patientDialogue: Oh, I already told the front desk I'm not feeling any pain.
-  optionAText: Just making sure there's no discrepancies there.
+  optionAText: I think we should check again anyway.
   optionANext: choice_herbert_pain_2
   optionAEmpathyDescription: Redundant
   optionAEmpthayPoint: -1
-  optionBText: Just double checking. If there are any sudden changes, please let
-    me know.
+  optionBText: Good. If there are any sudden changes, please let me know.
   optionBNext: 
   optionBEmpathyDescription: Event Addressed
   optionBEmpthayPoint: 1
-  notesText: 
+  notesText: Let me write that down before I forget.
   notesButtonText: 
-  notesName: note_herbert_pain
+  notesName: note_herbert_pain_brief

@@ -76,23 +76,31 @@ public class EndScreenLineGraph : MonoBehaviour
         float w    = graphContainer.sizeDelta.x;
         float h    = graphContainer.sizeDelta.y;
 
-        // Find yMax from NewEmpathyValue across all points
+        // Find yMin/yMax, always including 0 so the zero line is visible
+        float yMin = 0f;
         float yMax = 0f;
         foreach (var dp in points)
+        {
+            yMin = Mathf.Min(yMin, dp.NewEmpathyValue);
             yMax = Mathf.Max(yMax, dp.NewEmpathyValue);
-        if (yMax == 0) yMax = 1;
+        }
+        float yRange = yMax - yMin;
+        if (yRange == 0f) yRange = 1f;
+
+        // Y position (in pixels) that corresponds to value 0
+        float yZero = (-yMin / yRange) * h;
 
         float xSpacing = points.Count > 1 ? w / (points.Count - 1) : w / 2f;
 
         // Draw axes first so they sit behind everything
-        CreateAxes(w, h);
+        CreateAxes(w, h, yZero);
 
         GameObject prevDot = null;
 
         for (int i = 0; i < points.Count; i++)
         {
             float x = points.Count > 1 ? xSpacing * i : w / 2f;
-            float y = (points[i].NewEmpathyValue / yMax) * h;
+            float y = ((points[i].NewEmpathyValue - yMin) / yRange) * h;
 
             GameObject dot = CreateDot(new Vector2(x, y), i, points[i]);
             _graphObjects.Add(dot);
@@ -126,9 +134,9 @@ public class EndScreenLineGraph : MonoBehaviour
     //  Internal builders
     // ---------------------------------------------------------------
 
-    private void CreateAxes(float w, float h)
+    private void CreateAxes(float w, float h, float yZero = 0f)
     {
-        // --- Horizontal axis (X axis) ---
+        // --- Horizontal axis (zero line) ---
         _horizontalAxis = new GameObject("Axis_Horizontal", typeof(Image));
         _horizontalAxis.transform.SetParent(graphContainer, false);
         _horizontalAxis.transform.SetSiblingIndex(0);
@@ -142,7 +150,7 @@ public class EndScreenLineGraph : MonoBehaviour
         hRt.anchorMax        = Vector2.zero;
         hRt.pivot            = new Vector2(0f, 0.5f);
         hRt.sizeDelta        = new Vector2(w, axisThickness);
-        hRt.anchoredPosition = Vector2.zero;
+        hRt.anchoredPosition = new Vector2(0f, yZero);
 
         // --- Vertical axis (Y axis) ---
         _verticalAxis = new GameObject("Axis_Vertical", typeof(Image));

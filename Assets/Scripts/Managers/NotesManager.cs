@@ -19,7 +19,13 @@ public class NotesManager : MonoBehaviour
 
     [SerializeField] private GameObject notesPanel;
     [SerializeField] private GameObject notePrefab;
+
+    public int TotalSymptomShares = 0;
+    public List<string> UniqueSymptoms = new List<string>();
     
+    public int SymptomSharesCaught = 0;
+    public List<string> UniqueSymptomsCaught = new List<string>();
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -57,10 +63,29 @@ public class NotesManager : MonoBehaviour
                 }
             }
         }
+
+        GenerateUniqueSymptomsList();
+        Debug.Log($"Loaded {noteList.Count} notes for patient {patientName}. Unique symptoms caught: {UniqueSymptoms.Count}. Total symptom shares: {TotalSymptomShares}.");
         
         #if UNITY_EDITOR
         UnityEditor.EditorUtility.SetDirty(this);
         #endif
+    }
+
+    private void GenerateUniqueSymptomsList()
+    {
+        UniqueSymptoms.Clear();
+        TotalSymptomShares = 0;
+
+        foreach (NoteSO note in noteList)
+        {
+            if (!UniqueSymptoms.Contains(note.symptomCaught))
+            {
+                UniqueSymptoms.Add(note.symptomCaught);
+                int shares = note.symptomSharesCaught;
+                TotalSymptomShares += shares;
+            }
+        }
     }
 
 
@@ -74,6 +99,20 @@ public class NotesManager : MonoBehaviour
         if (noteTextMesh != null)
         {
             noteTextMesh.text = currentNote != null ? currentNote.noteText : "There was no text in the SO for this note.";
+        }
+
+        UpdateSymptomScore(currentNote);
+    }
+
+    private void UpdateSymptomScore(NoteSO note)
+    {
+        if (note == null) return;
+
+        if (!UniqueSymptomsCaught.Contains(note.symptomCaught))
+        {
+            UniqueSymptomsCaught.Add(note.symptomCaught);
+            SymptomSharesCaught += note.symptomSharesCaught;
+            Debug.Log($"Caught symptom: {note.symptomCaught}. Shares caught = {SymptomSharesCaught}/{TotalSymptomShares}");
         }
     }
 

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   patientName: herbert
   traitName: herbert_hand_finger_clubbing
-  traitData: 
+  traitData: hand
   representedOn: body
-  socketGO: 
-  triggersDialogue: herbert_clubbing_art
+  socketGO: fingersSocket
+  triggersDialogue: choice_herbert_clubbing

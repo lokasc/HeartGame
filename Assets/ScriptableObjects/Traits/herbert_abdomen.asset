@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   patientName: herbert
   traitName: herbert_abdomen
-  traitData: herbert_abdomen_art
+  traitData: abdomen
   representedOn: body
-  socketGO: 
-  triggersDialogue: herbert_abdomen_art
+  socketGO: abdomenSocket
+  triggersDialogue: choice_herbert_abdomen

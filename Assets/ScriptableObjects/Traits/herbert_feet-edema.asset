@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TraitSO
   patientName: herbert
   traitName: herbert_feet-edema
-  traitData: herbert_feet_edema
+  traitData: foot
   representedOn: body
-  socketGO: 
-  triggersDialogue: herbert_jvd_art
+  socketGO: feetSocket
+  triggersDialogue: 

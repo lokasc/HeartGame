@@ -15,4 +15,5 @@ MonoBehaviour:
   patientName: herbert
   noteName: note_herbert_family_brief
   noteText: No local family. Patient lives alone.
-  symptomsCaught: 0
+  symptomSharesCaught: 0
+  symptomCaught: 
