@@ -41,10 +41,12 @@ public class PanelToggleBehaviour : MonoBehaviour
         if (isOn)
         {
             targetTransform = endPosition;
+            SoundManager.Instance.PlayClip(SoundManager.Instance.SlideInSFX);
         }
         else
         {
             targetTransform = startPosition;
+            SoundManager.Instance.PlayClip(SoundManager.Instance.SlideOutSFX);
         }
         
     }
