@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_family
-  patientDialogue: Both my boys moved to the west coast a few years ago.
+  patientDialogue: Both my boys <?ShowOptionA>moved to the west <?ShowOptionB>coast
+    a few years ago<?ShowNotesOption>.
   optionAText: That's actually pretty cool.
   optionANext: choice_herbert_family_2
   optionAEmpathyDescription: Interuption

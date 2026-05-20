@@ -15,7 +15,7 @@ MonoBehaviour:
   patientName: herbert
   choiceName: choice_herbert_diet
   patientDialogue: Well, ever since my wife died I've mostly been eating microwave
-    dinners before bed...
+    <?ShowOptionA>dinners before bed...<?ShowOptionB><?ShowAllOptions>
   optionAText: Microwave dinners aren't great for someone in your condition, you
     know.
   optionANext: choice_herbert_diet_3

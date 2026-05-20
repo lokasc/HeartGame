@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_temperature
-  patientDialogue: I'm not feeling warm or anything. I think my temperature is fine.
+  patientDialogue: I'm not feeling warm <?ShowOptionA>or anything. I think my temperature
+    <?ShowOptionB>is fine<?ShowNotesOption>.
   optionAText: Are you really sure though?
   optionANext: choice_herbert_temperature_2
   optionAEmpathyDescription: Redundant

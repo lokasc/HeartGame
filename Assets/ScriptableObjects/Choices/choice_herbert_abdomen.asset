@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_abdomen
-  patientDialogue: My stomach feels really heavy... kind of bloated all the time.
+  patientDialogue: My stomach feels really heavy<?ShowOptionA>... kind of bloated
+    <?ShowOptionB>all the time<?ShowNotesOption>.
   optionAText: "That\u2019s probably just something you ate."
   optionANext: choice_herbert_abdomen_2
   optionAEmpathyDescription: Cold Pivot

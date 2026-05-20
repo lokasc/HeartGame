@@ -17,4 +17,4 @@ MonoBehaviour:
   traitData: foot
   representedOn: body
   socketGO: feetSocket
-  triggersDialogue: 
+  triggersDialogue: choice_herbert_swelling

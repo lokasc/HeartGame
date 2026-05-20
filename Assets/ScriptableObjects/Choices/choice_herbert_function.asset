@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_function
-  patientDialogue: I can barely shower or make myself something to eat anymore...
+  patientDialogue: I can barely shower<?ShowOptionA> or make myself something to
+    eat <?ShowOptionB>anymore..<?ShowNotesOption>.
   optionAText: You should try to stay active anyway.
   optionANext: choice_herbert_function_2
   optionAEmpathyDescription: Event Ignored

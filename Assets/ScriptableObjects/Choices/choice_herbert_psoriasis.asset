@@ -14,16 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_psoriasis
-  patientDialogue: Yeah. It's been pretty itchy for two weeks. Really been bothering
-    me.
-  optionAText: 
-  optionANext: 
-  optionAEmpathyDescription: 
-  optionAEmpthayPoint: 0
-  optionBText: 
-  optionBNext: 
-  optionBEmpathyDescription: 
-  optionBEmpthayPoint: 0
-  notesText: No worries. I'll note it down so we can get to the bottom of it.
+  patientDialogue: Are you looking at my arm? It's not that ugly, is it?
+  optionAText: Your arm has rashes on it.
+  optionANext: choice_herbert_psoriasis_2
+  optionAEmpathyDescription: Redundant
+  optionAEmpthayPoint: -1
+  optionBText: Of course not. I just noticed some rashes on your arm.
+  optionBNext: choice_herbert_psoriasis_3
+  optionBEmpathyDescription: Event Addressed
+  optionBEmpthayPoint: 1
+  notesText: No. But it's a good thing I noticed the redness on your arm.
   notesButtonText: 
-  notesName: note_herbert_psoriasis_full
+  notesName: note_herbert_psoriasis_brief

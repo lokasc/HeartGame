@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_clubbing
-  patientDialogue: I noticed something strange about my fingers...
+  patientDialogue: I noticed something strange <?ShowOptionA>...my fingers don't
+    look normal...<?ShowOptionB><?ShowNotesOption>
   optionAText: That does look concerning.
   optionANext: choice_herbert_clubbing_2
   optionAEmpathyDescription: Redundant

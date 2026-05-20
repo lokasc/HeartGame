@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_BP
-  patientDialogue: Someone did take my blood pressure just now. Should I be concerned?
+  patientDialogue: Someone did take my blood pressure<?ShowOptionA> just now. Should
+    I be concerned<?ShowOptionB>?<?ShowNotesOption>
   optionAText: Not really. It's just common practice.
   optionANext: choice_herbert_BP_2
   optionAEmpathyDescription: Redundant

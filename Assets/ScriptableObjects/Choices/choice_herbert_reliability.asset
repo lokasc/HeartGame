@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_reliability
-  patientDialogue: I even forgot to take my medications last night, too.
+  patientDialogue: I even forgot to take my medications<?ShowOptionA> last night<?ShowOptionB>,
+    too<?ShowNotesOption> .
   optionAText: That doesn't sound good.
   optionANext: choice_herbert_reliability_2
   optionAEmpathyDescription: Event Ignored

@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_oxygen
-  patientDialogue: I've been feeling lightheaded for some reason. I think it's my
-    O2...
+  patientDialogue: I've been feeling lightheaded <?ShowOptionA> for some reason.
+    I think it's my O2<?ShowOptionB>...<?ShowAllOptions>
   optionAText: Well, your oxygen is still in the normal range.
   optionANext: choice_herbert_oxygen_2
   optionAEmpathyDescription: Cold Pivot

@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_speaking
-  patientDialogue: Lost...my breath...for a...second...sorry about...that.
+  patientDialogue: Lost...my breath<?ShowOptionA>...for a...second...<?ShowOptionB>sorry
+    about...that.<?ShowNotesOption>
   optionAText: Maybe try to speak more clearly.
   optionANext: choice_herbert_speaking_2
   optionAEmpathyDescription: Cold Pivot

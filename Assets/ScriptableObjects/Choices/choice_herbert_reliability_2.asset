@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_reliability_2
-  patientDialogue: To be honest with you, I [skip the water pill] sometimes cause
-    it makes me pee too much...
+  patientDialogue: To be honest with you, I skip the water pill<?ShowOptionA> sometimes
+    cause it makes me pee<?ShowOptionB> too much... <?ShowNotesOption>
   optionAText: You need to be less forgetful.
   optionANext: choice_herbert_reliability_4
   optionAEmpathyDescription: Interuption

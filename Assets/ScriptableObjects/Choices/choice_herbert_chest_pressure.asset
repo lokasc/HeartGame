@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_chest_pressure
-  patientDialogue: There's also this pressure in my chest... right in the middle.
+  patientDialogue: There's also this pressure<?ShowOptionA> in my chest... right
+    in the middle<?ShowOptionB>.<?ShowNotesOption>
   optionAText: If it were serious, you'd be in worse shape.
   optionANext: choice_herbert_chest_pressure_2
   optionAEmpathyDescription: Cold Pivot

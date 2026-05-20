@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChoiceSO
   patientName: herbert
   choiceName: choice_herbert_alcohol
-  patientDialogue: I usually have a few beers... maybe some wine most days.
+  patientDialogue: I usually have a few beers<?ShowOptionA>... maybe some wine <?ShowOptionB>
+    most days<?ShowNotesOption>.
   optionAText: "That\u2019s probably not helping your condition."
   optionANext: choice_herbert_alcohol_2
   optionAEmpathyDescription: Interuption
