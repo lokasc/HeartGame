@@ -20487,6 +20487,7 @@ MonoBehaviour:
   GoodClickSFX: {fileID: 8300000, guid: f8d1c48d4a25bc649acace25b8965675, type: 3}
   SlideInSFX: {fileID: 8300000, guid: f61367385072e2744b2edb463563138c, type: 3}
   SlideOutSFX: {fileID: 8300000, guid: 4793f0cbf2192d544893fcf497379ac3, type: 3}
+  VoiceAudioClip: {fileID: 8300000, guid: c867931ce2b92462eab8904ac287ad96, type: 3}
 --- !u!114 &1809544745
 MonoBehaviour:
   m_ObjectHideFlags: 0

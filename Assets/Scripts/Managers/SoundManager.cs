@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -10,6 +11,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] public AudioClip GoodClickSFX;
     [SerializeField] public AudioClip SlideInSFX;
     [SerializeField] public AudioClip SlideOutSFX;
+    [SerializeField] public AudioClip VoiceAudioClip;
 
     private void Awake()
     {
@@ -33,5 +35,13 @@ public class SoundManager : MonoBehaviour
     public void PlayClip(AudioClip clip)
     {
         sfxAudioSource.PlayOneShot(clip);
+    }
+
+    public void StopAudioClip()
+    {
+        if (sfxAudioSource.isPlaying)
+        {
+            sfxAudioSource.Stop();
+        }
     }
 }

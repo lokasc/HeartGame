@@ -73,16 +73,35 @@ public class ChoiceManager : MonoBehaviour
     {
         Patient.OnPatientTraitsLoaded += HandlePatientTraitsLoaded;
         patientTypewriter.onMessage.AddListener(OnTypewriterMessage);
+        // patientTypewriter.onTextStart.AddListener();
+        patientTypewriter.onTypewriterStart.AddListener(PlayVoiceSound);
+        patientTypewriter.onTextShowed.AddListener(StopVoiceSound);
+        // The correct way to do patient sounds is to do an subscribe to OnCharacterVisible
+
     }
 
+    private void PlayVoiceSound()
+    {
+        SoundManager.Instance.PlayClip(SoundManager.Instance.VoiceAudioClip);
+    }
+
+    private void StopVoiceSound()
+    {
+        SoundManager.Instance.StopAudioClip();
+    }
+
+    
     private void OnDisable()
     {
         Patient.OnPatientTraitsLoaded -= HandlePatientTraitsLoaded;
         patientTypewriter.onMessage.RemoveListener(OnTypewriterMessage);
+        patientTypewriter.onTypewriterStart.RemoveListener(PlayVoiceSound);
+        patientTypewriter.onTextShowed.RemoveListener(StopVoiceSound);
     }
 
     private void OnTypewriterMessage(EventMarker marker)
     {
+        
         Debug.Log("Event: " + marker.name);
 
         switch (marker.name)
@@ -145,7 +164,7 @@ public class ChoiceManager : MonoBehaviour
 
             patientTypewriter.SetTypewriterSpeed(currentPatientSpeakingSpeed);
             // patientTypewriter.ShowText("Hello!<?ShowOptionA> I am wondering if you think <?ShowOptionB> I should for a backflip<?ShowNotesOption> now or later. <?ShowAllOptions>");
-
+            // Here I play the sound
             patientTypewriter.ShowText($"{currentChoice.patientDialogue}<?ShowAllOptions>");
             StartCoroutine(RebuildChoiceLayoutNextFrame());
         }
@@ -260,6 +279,7 @@ public class ChoiceManager : MonoBehaviour
 
     public void HideChoice()
     {
+
         choicePanel.SetActive(false);
         BarkManager.Instance.IsSpawning = true;
     }
